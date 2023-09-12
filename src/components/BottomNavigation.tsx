@@ -7,8 +7,8 @@ const NAVIGATION = (props: any) => {
   return (
     <>
       <div className="text-sm">
-        <h1 className="text-sm">{props.title}</h1>
-        <ul className="mt-4 text-muted flex flex-col gap-2">
+        <h1 className="text-sm text-center md:text-start">{props.title}</h1>
+        <ul className="mt-4 text-muted flex flex-col text-center md:text-start gap-2">
           {props.data.map((item: any) => (
             <li className="hover:text-white" key={item.index}>
               <Link href={item.link}>{item.label}</Link>
@@ -22,9 +22,9 @@ const NAVIGATION = (props: any) => {
 
 const BottomNavigation = () => {
   return (
-    <div className="w-full mt-12 text-white flex gap-28">
+    <div className="w-full mt-12 text-white flex flex-col md:flex-row gap-10 md:gap-16 lg:gap-28">
       <div>
-        <div className="flex font-semibold text-lg gap-4">
+        <div className="flex justify-center md:justify-start font-semibold text-md gap-4">
           <Image
             src={collectionOutline}
             height={24}
@@ -33,7 +33,7 @@ const BottomNavigation = () => {
           />
           Collosal
         </div>
-        <p className="text-muted text-sm mt-4 leading-loose">
+        <p className="text-muted text-sm mt-4 leading-loose text-center md:text-start">
           Copyright © 2021 <br />
           Design By Collosal LLC
         </p>

@@ -10,15 +10,17 @@ const CTA = () => {
   return (
     <div
       id="cta"
-      className="flex justify-between items-center border-t-[1px] border-b-[1px] py-10 border-light"
+      className="flex flex-col lg:flex-row gap-8 lg:gap-0 justify-between items-center border-t-[1px] border-b-[1px] py-10 border-light"
     >
-      <h1 className="text-white font-bold text-2xl pr-28">
+      <h1 className="text-white font-bold text-[22px] lg:text-[22px] pr-0 lg:pr-28">
         We&apos;ve prepared everything, it&apos;s time for you to tell the
         problem
       </h1>
-      <div className="flex gap-4">
-        <ButtonPrimary>Send Quote</ButtonPrimary>
-        <ButtonSecondary type="muted">Ask Us</ButtonSecondary>
+      <div className="flex flex-col lg:flex-row gap-4 w-full lg:w-auto">
+        <ButtonPrimary w_full={true}>Send Quote</ButtonPrimary>
+        <ButtonSecondary type="muted" w_full={true}>
+          Ask Us
+        </ButtonSecondary>
       </div>
     </div>
   );
@@ -26,7 +28,7 @@ const CTA = () => {
 
 const Footer = () => {
   return (
-    <footer className="w-full mt-32 px-32 pb-24">
+    <footer className="w-full mt-32 px-6 md:px-32 pb-24">
       <CTA />
 
       <BottomNavigation />
@@ -35,14 +37,14 @@ const Footer = () => {
         <Image
           src={particleRed}
           alt="particle"
-          className="absolute right-5 bottom-0"
+          className="absolute right-5 bottom-0 -z-10"
           height={55}
           width={55}
         />
         <Image
           src={particleGreen}
           alt="particle"
-          className="absolute left-10 bottom-0"
+          className="absolute left-10 bottom-0 -z-10"
           height={47}
           width={47}
         />

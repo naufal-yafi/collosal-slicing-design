@@ -32,7 +32,7 @@ const config: Config = {
           "60%": {
             transform: "translate(-20px, 20px) scale(0.8)",
           },
-          "34%": {
+          "100%": {
             transform: "translate(30px, -50px) scale(1.2)",
           },
         },

@@ -21,13 +21,13 @@ export default function Home() {
       <BackgroundBlur />
 
       <main
-        className={`${notoSans.className} pt-40 px-32 flex flex-col justify-center items-center`}
+        className={`${notoSans.className} pt-32 md:pt-40 px-6 z-0 md:px-32 flex flex-col justify-center items-center`}
       >
         <hgroup className="text-center text-white w-2/3">
-          <h3 className="text-green text-[15px] mb-4">
+          <h3 className="text-green text-[13px] md:text-[15px] mb-4">
             CLIENT-DEVELOPMENT DRIVEN
           </h3>
-          <h1 className="text-[35px] font-bold tracking-wide">
+          <h1 className="text-[32px] md:text-[35px] font-bold tracking-wide">
             We Design. We Develop. We Ship. In The Same Day.
           </h1>
           <p className="text-[14px] text-muted leading-loose mt-5">
@@ -36,9 +36,11 @@ export default function Home() {
             not reduce the quality of our work.
           </p>
         </hgroup>
-        <div className="flex gap-5 mt-8">
-          <ButtonPrimary>Send Quote</ButtonPrimary>
-          <ButtonSecondary type="muted">Learn More</ButtonSecondary>
+        <div className="flex flex-col md:flex-row w-full md:w-auto gap-5 mt-8">
+          <ButtonPrimary w_full={true}>Send Quote</ButtonPrimary>
+          <ButtonSecondary type="muted" w_full={true}>
+            Learn More
+          </ButtonSecondary>
         </div>
       </main>
 

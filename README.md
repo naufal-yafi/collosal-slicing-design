@@ -144,13 +144,15 @@ default: {
   link: "/",
   size: "large",
   type: "default",
-  rounded: false
+  w_full: false,
+  rounded: false,
 }
 
 available_property: {
   link: "free but prefix must be given /",
   size: ["large", "small"],
   type: ["default", "outline", "muted"],
+  w_full: [true, false],
   rounded: [true, false]
 }
 ```
@@ -170,6 +172,7 @@ import ButtonPrimary from "@button/ButtonPrimary";
   link="/location" 
   size="small" 
   type="muted"
+  w_full={true}
 >
   This My Home
 </ButtonPrimary>
@@ -192,6 +195,7 @@ import ButtonSecondary from "@button/ButtonSecondary";
   link="/contact" 
   size="large" 
   type="outline"
+  rounded={true}
 >
   Contact Me
 </ButtonSecondary>
