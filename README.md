@@ -11,6 +11,13 @@ Slicing Design Challenge from [codedesign.dev](https://codedesign.dev/). The cha
   - [Getting Started](#getting-started)
     - [Learn More](#learn-more)
     - [Deploy on Vercel](#deploy-on-vercel)
+  - [Components](#components)
+    - [Title](#title)
+    - [Header](#header)
+    - [Footer](#footer)
+    - [Button](#button)
+      - [Button Primary](#button-primary)
+      - [Button Secondary](#button-secondary)
   - [API Specification](#api-specification)
     - [Get All Data Blog](#get-all-data-blog)
     - [Get Spesific Blog Using Slug](#get-spesific-blog-using-slug)
@@ -55,6 +62,140 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+[👆 [Table of Content](#table-of-content)]
+
+## Components
+
+### Title
+
+Property:
+
+```ts
+default: {
+  set: "Collosal - Tell us about your problem and how we can help"
+}
+```
+
+How to use:
+
+```ts
+import Title from "@component/Title";
+
+// Use Default Option
+<Title />
+
+// Custom Title
+<Title set="My Custom Title" />
+```
+ 
+[👆 [Table of Content](#table-of-content)]
+
+### Header
+
+Property:
+
+```ts
+default: {
+  params: "/"
+}
+
+available_params: [
+  "/",
+  "/service",
+  "/work",
+  "/project",
+  "/about",
+]
+```
+
+How to use:
+
+```ts
+import Header from "@component/Header";
+
+// Use Default Option
+<Header />
+
+// Change Active Nav Button
+<Header params="/work" />
+```
+
+[👆 [Table of Content](#table-of-content)]
+
+### Footer
+
+How to use:
+
+```ts
+import Footer from "@component/Footer";
+
+<Footer />
+```
+
+[👆 [Table of Content](#table-of-content)]
+
+### Button
+
+Property:
+
+```ts
+default: {
+  link: "/",
+  size: "large",
+  type: "default",
+  rounded: false
+}
+
+available_property: {
+  link: "free but prefix must be given /",
+  size: ["large", "small"],
+  type: ["default", "outline", "muted"],
+  rounded: [true, false]
+}
+```
+
+#### Button Primary
+
+How to use:
+
+```ts
+import ButtonPrimary from "@button/ButtonPrimary";
+
+// Use Default Option
+<ButtonPrimary>Button</ButtonPrimary>
+
+// Custom Button Style
+<ButtonPrimary 
+  link="/location" 
+  size="small" 
+  type="muted"
+>
+  This My Home
+</ButtonPrimary>
+```
+
+[👆 [Table of Content](#table-of-content)]
+
+#### Button Secondary
+
+How to use:
+
+```ts
+import ButtonSecondary from "@button/ButtonSecondary";
+
+// Use Default Option
+<ButtonSecondary>Button</ButtonSecondary>
+
+// Custom Button Style
+<ButtonSecondary 
+  link="/contact" 
+  size="large" 
+  type="outline"
+>
+  Contact Me
+</ButtonSecondary>
+```
 
 [👆 [Table of Content](#table-of-content)]
 

@@ -9,12 +9,22 @@ const Title = (props: any) => {
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
       <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="" />
-      <meta name="keywords" content="" />
-      <title>{props.set}</title>
+      <meta
+        name="description"
+        content="Tell us about your problem and how we can help."
+      />
+      <meta
+        name="keywords"
+        content="collosal, landing page, i help you, designer, blog, blogger, developer, ui designer, frontend developer, startup"
+      />
       <link rel="manifest" href="/manifest.json" />
+      <title>{props.set}</title>
     </Head>
   );
+};
+
+Title.defaultProps = {
+  set: "Collosal - Tell us about your problem and how we can help",
 };
 
 export default Title;

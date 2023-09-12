@@ -15,7 +15,10 @@
     "incremental": true,
     "paths": {
       "@/*": ["./src/*"],
-      "@data/*": ["./src/data/*"]
+      "@data/*": ["./src/data/*"],
+      "@button/*": ["./src/components/Button/*"],
+      "@component/*": ["./src/components/*"],
+      "@logo/*": ["./public/assets/icons/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
