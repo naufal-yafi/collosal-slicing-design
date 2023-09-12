@@ -14,7 +14,7 @@ export default function handler(
         ? res.status(200).json({
             code: 200,
             status: "OK",
-            message: "Successfully",
+            message: "Successfully Retrieving Data",
             page: {
               total_data: 1,
             },
@@ -23,7 +23,7 @@ export default function handler(
         : res.status(404).json({
             code: 404,
             status: "Not Found",
-            message: "Data not found.",
+            message: "Data could not be found",
             page: {
               total_data: 0,
             },
@@ -33,7 +33,7 @@ export default function handler(
       res.status(404).json({
         code: 404,
         status: "Not Found",
-        message: "Data not found.",
+        message: "Data could not be found",
         page: {
           total_data: 0,
         },
@@ -44,6 +44,7 @@ export default function handler(
     res.status(500).json({
       code: 500,
       status: "Internal Server Error",
+      message: (error as Error).message,
       page: {
         total_data: 0,
       },

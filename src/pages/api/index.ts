@@ -7,6 +7,7 @@ export default function handler(
   res.status(404).json({
     code: 404,
     status: "Not Found",
+    message: "Data could not be found",
     page: {
       total_data: 0,
     },
