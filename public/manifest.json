@@ -1,0 +1,30 @@
+{
+  "lang": "en",
+  "dir": "ltr",
+  "name": "Collosal: Tell us about your problem and how we can help",
+  "short_name": "Collosal",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon.svg",
+      "type": "image/svg",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "apple-icon.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "display": "standalone",
+  "orientation": "landscape",
+  "theme_color": "#6016FC",
+  "background_color": "#0B0B22"
+}

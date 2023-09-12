@@ -1,0 +1,17 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "editor.wordWrap": "on",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": null
+  },
+  "prettier.singleQuote": false,
+  "prettier.trailingComma": "all"
+}
