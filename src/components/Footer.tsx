@@ -37,14 +37,14 @@ const Footer = () => {
         <Image
           src={particleRed}
           alt="particle"
-          className="absolute right-5 bottom-0 -z-10"
+          className="absolute right-5 -z-10 lg:translate-x-[-15px] lg:translate-y-[-400px]"
           height={55}
           width={55}
         />
         <Image
           src={particleGreen}
           alt="particle"
-          className="absolute left-10 bottom-0 -z-10"
+          className="absolute left-10 -z-10 lg:translate-x-[-28px] lg:translate-y-[-200px]"
           height={47}
           width={47}
         />

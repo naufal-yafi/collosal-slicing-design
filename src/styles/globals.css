@@ -9,6 +9,7 @@
 
 ::-webkit-scrollbar {
   width: 10px;
+  transform: rotate();
 }
 
 ::-webkit-scrollbar-track {
@@ -25,7 +26,6 @@
 }
 
 @layer components {
-  /* COLORS */
   .text-muted {
     @apply text-white text-opacity-60;
   }
@@ -48,166 +48,10 @@
     @apply bg-primary bg-opacity-10;
   }
 
-  /* TEXT SIZE */
-  .t-size-caption {
-    @apply text-[12px];
+  .blur-particle {
+    @apply rounded-full blur-[90px] opacity-20 animate-pop;
   }
-  .t-size-label {
-    @apply text-[14px];
-  }
-  .t-size-body {
-    @apply text-[16px];
-  }
-  .t-size-h4 {
-    @apply text-[18px];
-  }
-  .t-size-h3 {
-    @apply text-[20px];
-  }
-  .t-size-h2 {
-    @apply text-[30px];
-  }
-  .t-size-h1 {
-    @apply text-[36px];
-  }
-
-  /* TEXT STYLE */
-  .author-job {
-    @apply font-semibold t-size-caption leading-[0%];
-  }
-  .form-label {
-    @apply font-normal t-size-label leading-[0%];
-  }
-  .testimonial-company {
-    @apply form-label font-medium;
-  }
-  .comment-time {
-    @apply form-label;
-  }
-  .blog-meta {
-    @apply form-label;
-  }
-  .blog-quote-name {
-    @apply form-label;
-  }
-  .project-detail-label {
-    @apply form-label font-semibold leading-[10%];
-  }
-  .team-job {
-    @apply testimonial-company;
-  }
-  .small-card-description {
-    @apply form-label tracking-[24px];
-  }
-  .section-badge {
-    @apply font-semibold t-size-body tracking-[32px] leading-[1.6px];
-  }
-  .pricing-title {
-    @apply font-bold t-size-body leading-[0%];
-  }
-  .comment-content {
-    @apply section-badge font-medium leading-[0%];
-  }
-  .testimonial-description {
-    @apply section-badge font-medium leading-[0%];
-  }
-  .feature-card-description {
-    @apply section-badge font-medium leading-[0%];
-  }
-  .faq-description {
-    @apply feature-card-description;
-  }
-  .project-detail-value {
-    @apply section-badge tracking-normal leading-[0%];
-  }
-  .statictic-label {
-    @apply pricing-title leading-[10%];
-  }
-  .project-description {
-    @apply pricing-title font-normal tracking-[34px];
-  }
-  .author-bio {
-    @apply project-description;
-  }
-  .blog-content {
-    @apply project-description font-medium;
-  }
-  .page-content {
-    @apply project-description font-medium;
-  }
-  .pricing-detail {
-    @apply pricing-title font-medium tracking-[36px];
-  }
-  .section-paragraph {
-    @apply section-badge font-medium leading-[0%];
-  }
-  .icon-list-label {
-    @apply pricing-title font-medium;
-  }
-  .small-card-title {
-    @apply pricing-title font-semibold;
-  }
-  .page-description {
-    @apply section-paragraph;
-  }
-  .card-paragraph {
-    @apply section-paragraph;
-  }
-  .card-title {
-    @apply font-bold t-size-h4 leading-[0%];
-  }
-  .blog-lead {
-    @apply card-title tracking-[34px];
-  }
-  .team-name {
-    @apply card-title;
-  }
-  .feature-card-title {
-    @apply card-title;
-  }
-  .testimonial-name {
-    @apply card-title;
-  }
-  .icon-list-value {
-    @apply font-bold t-size-h3 leading-[0%];
-  }
-  .comment-name {
-    @apply icon-list-value font-semibold;
-  }
-  .author-name {
-    @apply icon-list-value font-semibold;
-  }
-  .blog-headline {
-    @apply icon-list-value font-medium tracking-[40px];
-  }
-  .blog-quote {
-    @apply blog-headline;
-  }
-  .faq-title {
-    @apply icon-list-value tracking-[48px];
-  }
-  .project-title {
-    @apply icon-list-value tracking-[34px];
-  }
-  .blog-title {
-    @apply project-title;
-  }
-  .section-title {
-    @apply font-bold t-size-h2 tracking-[48px] leading-[0%];
-  }
-  .blog-subtitle {
-    @apply section-title;
-  }
-  .page-subtitle {
-    @apply section-title;
-  }
-  .pricing-price {
-    @apply font-bold t-size-h1 tracking-normal;
-  }
-  .statictic-value {
-    @apply pricing-price tracking-normal;
-  }
-  .page-title {
-    @apply pricing-price tracking-[54px] leading-[0%];
+  .animate-blur-particle {
+    @apply blur-particle animate-blob blur-[120px];
   }
 }

@@ -4,6 +4,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Slicing Design Challenge from [codedesign.dev](https://codedesign.dev/). The challenge I chose with the master's difficulty level can be read at [codedesign.dev/collosal](https://codedesign.dev/challenge/collosal).
 
+UI Designer: [Muhammad Nauval Azhar](https://www.figma.com/@mhd) <br>
+Frontend Dev: [Muhammad Naufal Yafi'](https://github.com/naufal-yafi)
+
 ![result-preview](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/b7c52699-1d36-40f9-a3bb-5c922709df35)
 
 # Table of Content
@@ -290,7 +293,7 @@ import FeatureCard from "@component/FeatureCard";
 import weightBoxIcon from "@logo/weight-box.svg";
 import weightCodeIcon from "@logo/weight-code.svg";
 
-<section className="columns-3 mt-20 lg:mt-24 px-6 lg:px-32 flex flex-col lg:flex-row gap-y-5 lg:gap-x-5 items-start justify-center  h-auto lg:h-56">
+<section className="grid grid-cols-1 md:grid-cols-3 gap-5">
   <!-- Use Default Option -->
   <FeatureCard />
 

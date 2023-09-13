@@ -14,11 +14,13 @@
     "jsx": "preserve",
     "incremental": true,
     "paths": {
-      "@/*": ["./src/*"],
       "@data/*": ["./src/data/*"],
       "@button/*": ["./src/components/Button/*"],
       "@component/*": ["./src/components/*"],
-      "@logo/*": ["./public/assets/icons/*"]
+      "@logo/*": ["./public/assets/icons/*"],
+      "@image/*": ["./public/assets/images/*"],
+
+      "@/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
