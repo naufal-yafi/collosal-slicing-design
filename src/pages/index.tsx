@@ -1,9 +1,13 @@
 import ButtonPrimary from "@button/ButtonPrimary";
 import ButtonSecondary from "@button/ButtonSecondary";
 import BackgroundBlur from "@component/BackgroundBlur";
+import CompanyLogo from "@component/CompanyLogo";
+import FeatureCard from "@component/FeatureCard";
 import Footer from "@component/Footer";
 import Header from "@component/Header";
 import Title from "@component/Title";
+import weightBoxIcon from "@logo/weight-box.svg";
+import weightCodeIcon from "@logo/weight-code.svg";
 import { Noto_Sans } from "next/font/google";
 
 const notoSans = Noto_Sans({
@@ -43,6 +47,22 @@ export default function Home() {
           </ButtonSecondary>
         </div>
       </main>
+
+      <section className="columns-3 mt-20 lg:mt-24 px-6 lg:px-32 flex flex-col lg:flex-row gap-y-5 lg:gap-x-5 items-start justify-center  h-auto lg:h-56">
+        <FeatureCard />
+        <FeatureCard
+          img={weightCodeIcon}
+          title="Develop"
+          desc="Transform design and write business logic here. Choose the technology you want."
+        />
+        <FeatureCard
+          img={weightBoxIcon}
+          title="Ship"
+          desc="After the work is complete, we will send the project and all its assets to you."
+        />
+      </section>
+
+      <CompanyLogo />
 
       <Footer />
     </>

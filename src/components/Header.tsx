@@ -54,6 +54,10 @@ const Header = (props: any) => {
           </ul>
         </nav>
 
+        <div className="block md:hidden">
+          <ButtonSecondary link="" type="muted"></ButtonSecondary>
+        </div>
+
         <div className="hidden md:block">
           <ButtonSecondary link="/contact" size="small" type="muted">
             Contact

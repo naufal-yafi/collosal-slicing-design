@@ -9,8 +9,8 @@ const NAVIGATION = (props: any) => {
       <div className="text-sm">
         <h1 className="text-sm text-center md:text-start">{props.title}</h1>
         <ul className="mt-4 text-muted flex flex-col text-center md:text-start gap-2">
-          {props.data.map((item: any) => (
-            <li className="hover:text-white" key={item.index}>
+          {props.data.map((item: any, index: number) => (
+            <li className="hover:text-white" key={index}>
               <Link href={item.link}>{item.label}</Link>
             </li>
           ))}

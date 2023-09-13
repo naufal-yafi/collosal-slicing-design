@@ -4,6 +4,8 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 Slicing Design Challenge from [codedesign.dev](https://codedesign.dev/). The challenge I chose with the master's difficulty level can be read at [codedesign.dev/collosal](https://codedesign.dev/challenge/collosal).
 
+![result-preview](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/b7c52699-1d36-40f9-a3bb-5c922709df35)
+
 # Table of Content
 
 - [Slicing Design - Collosal](#slicing-design---collosal)
@@ -15,9 +17,12 @@ Slicing Design Challenge from [codedesign.dev](https://codedesign.dev/). The cha
     - [Title](#title)
     - [Header](#header)
     - [Footer](#footer)
+    - [Background Blur](#background-blur)
     - [Button](#button)
       - [Button Primary](#button-primary)
       - [Button Secondary](#button-secondary)
+    - [Company Logo](#company-logo)
+    - [Feature Card](#feature-card)
   - [API Specification](#api-specification)
     - [Get All Data Blog](#get-all-data-blog)
     - [Get Spesific Blog Using Slug](#get-spesific-blog-using-slug)
@@ -69,6 +74,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### Title
 
+Preview:
+
+![preview-title](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/bf764e47-3256-489a-aa49-6f1dc6a048c5)
+
 Property:
 
 ```ts
@@ -92,6 +101,10 @@ import Title from "@component/Title";
 [👆 [Table of Content](#table-of-content)]
 
 ### Header
+
+Preview:
+
+![preview-header](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/a6515f36-6a8f-49aa-9ce6-85d9177b94d8)
 
 Property:
 
@@ -125,6 +138,10 @@ import Header from "@component/Header";
 
 ### Footer
 
+Preview:
+
+![preview-header](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/58ee120d-7a29-40a9-976b-7038701aa698)
+
 How to use:
 
 ```ts
@@ -133,9 +150,37 @@ import Footer from "@component/Footer";
 <Footer />
 ```
 
+### Background Blur
+
+Preview:
+
+![preview-background-blur](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/5884fe28-b9f5-4d2c-9fb6-24e792ecf317)
+
+How to Use:
+
+```ts
+import BackgroundBlur from "@component/BackgroundBlur";
+
+<Title />
+<Header />
+
+// This is the order of component placement
+<BackgroundBlur />
+
+<main></main>
+<section></section>
+...
+
+<Footer />
+```
+
 [👆 [Table of Content](#table-of-content)]
 
 ### Button
+
+Preview:
+
+![preview-button](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/7111daed-84e2-4fbd-a51d-4411abcb878d)
 
 Property:
 
@@ -199,6 +244,68 @@ import ButtonSecondary from "@button/ButtonSecondary";
 >
   Contact Me
 </ButtonSecondary>
+```
+
+[👆 [Table of Content](#table-of-content)]
+
+### Company Logo
+
+Preview:
+
+![preview-company-logo](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/6463f753-62f6-4281-95a2-e23fa43a724a)
+
+How to Use:
+
+```ts
+import CompanyLogo from "@component/CompanyLogo";
+
+<CompanyLogo />
+```
+
+[👆 [Table of Content](#table-of-content)]
+
+
+### Feature Card
+
+Preview:
+
+![preview-feature-card](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/67c3b37e-0dac-4fe9-9a20-5dd501405f10)
+
+Property:
+
+```ts
+default: {
+  img: "/assets/icons/weight-figma.svg",
+  title: "Design",
+  desc: "The project interface will be designed first, our favorite tool is Figma.",
+}
+```
+
+How to Use:
+
+```ts
+import FeatureCard from "@component/FeatureCard";
+
+// Import your icon/logo asset
+import weightBoxIcon from "@logo/weight-box.svg";
+import weightCodeIcon from "@logo/weight-code.svg";
+
+<section className="columns-3 mt-20 lg:mt-24 px-6 lg:px-32 flex flex-col lg:flex-row gap-y-5 lg:gap-x-5 items-start justify-center  h-auto lg:h-56">
+  <!-- Use Default Option -->
+  <FeatureCard />
+
+  <!-- Example Custom Option -->
+  <FeatureCard
+    img={weightCodeIcon}
+    title="Develop"
+    desc="Transform design and write business logic here. Choose the technology you want."
+  />
+  <FeatureCard
+    img={weightBoxIcon}
+    title="Ship"
+    desc="After the work is complete, we will send the project and all its assets to you."
+  />
+</section>
 ```
 
 [👆 [Table of Content](#table-of-content)]
