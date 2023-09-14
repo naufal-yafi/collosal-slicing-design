@@ -1,4 +1,3 @@
-import weightFigmaIcon from "@logo/weight-figma.svg";
 import Image from "next/image";
 
 const FeatureCard = (props: any) => {
@@ -17,9 +16,9 @@ const FeatureCard = (props: any) => {
 };
 
 FeatureCard.defaultProps = {
-  img: weightFigmaIcon,
-  title: "Design",
-  desc: "The project interface will be designed first, our favorite tool is Figma.",
+  img: "/",
+  title: "Your Title",
+  desc: "Your Description",
 };
 
 export default FeatureCard;

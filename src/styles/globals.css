@@ -26,6 +26,17 @@
 }
 
 @layer components {
+  .page {
+    @apply px-6 z-0 md:px-32;
+  }
+  section {
+    @apply page;
+  }
+
+  main {
+    @apply page pt-32 md:pt-40;
+  }
+
   .text-muted {
     @apply text-white text-opacity-60;
   }

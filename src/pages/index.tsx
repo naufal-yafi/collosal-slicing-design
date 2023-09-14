@@ -2,57 +2,53 @@ import ButtonPrimary from "@button/ButtonPrimary";
 import ButtonSecondary from "@button/ButtonSecondary";
 import BackgroundBlur from "@component/BackgroundBlur";
 import CompanyLogo from "@component/CompanyLogo";
+import HeroCenterContent from "@component/Content/HeroCenterContent";
 import FeatureCard from "@component/FeatureCard";
 import Footer from "@component/Footer";
 import Header from "@component/Header";
 import Title from "@component/Title";
+import NotoSans from "@data/NotoSans";
+import img_desktopdisplay from "@image/desktop-display.svg";
 import img_howwework from "@image/how-we-work.svg";
+import img_mobiledisplay from "@image/mobile-display.svg";
 import img_ourteam from "@image/our-team.svg";
 import weightBoxIcon from "@logo/weight-box.svg";
 import weightCodeIcon from "@logo/weight-code.svg";
-import { Noto_Sans } from "next/font/google";
+import weightFigmaIcon from "@logo/weight-figma.svg";
 import Image from "next/image";
 
-const notoSans = Noto_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-export default function Home() {
+const Home = () => {
   return (
     <>
-      <Title />
+      <Title set="Collosal - Tell us about your problem and how we can help" />
 
       <Header />
 
       <BackgroundBlur />
 
-      <main
-        className={`${notoSans.className} pt-32 md:pt-40 px-6 z-0 md:px-32 flex flex-col justify-center items-center`}
-      >
-        <hgroup className="text-center text-white w-2/3">
-          <h2 className="text-green text-[13px] md:text-[15px] mb-4 uppercase">
-            CLIENT-DEVELOPMENT DRIVEN
-          </h2>
-          <h1 className="text-[32px] md:text-[35px] font-bold tracking-wide">
-            We Design. We Develop. We Ship. In The Same Day.
-          </h1>
-          <p className="text-[14px] text-muted leading-loose mt-5">
-            We are committed to not making clients wait. We will deliver the
-            work as quickly as possible. Even on the same day. Even so, we do
-            not reduce the quality of our work.
-          </p>
-        </hgroup>
-        <div className="flex flex-col md:flex-row w-full md:w-auto gap-5 mt-8">
-          <ButtonPrimary w_full={true}>Send Quote</ButtonPrimary>
-          <ButtonSecondary type="muted" w_full={true}>
-            Learn More
-          </ButtonSecondary>
-        </div>
+      <main className={NotoSans.className}>
+        <HeroCenterContent
+          label="CLIENT-DEVELOPMENT DRIVEN"
+          title="We Design. We Develop. We Ship. In The Same Day."
+          desc="We are committed to not making clients wait. We will deliver the
+          work as quickly as possible. Even on the same day. Even so, we do
+          not reduce the quality of our work."
+        >
+          <div className="flex flex-col md:flex-row w-full md:w-auto gap-5 mt-8">
+            <ButtonPrimary w_full={true}>Send Quote</ButtonPrimary>
+            <ButtonSecondary type="muted" w_full={true}>
+              Learn More
+            </ButtonSecondary>
+          </div>
+        </HeroCenterContent>
       </main>
 
-      <section className="mt-20 mb-10 lg:mt-24 px-6 lg:px-32 grid grid-cols-1 md:grid-cols-3 gap-5">
-        <FeatureCard />
+      <section className="mt-20 mb-10 lg:mt-24 grid grid-cols-1 md:grid-cols-3 gap-5 lg:gap-8">
+        <FeatureCard
+          img={weightFigmaIcon}
+          title="Design"
+          desc="The project interface will be designed first, our favorite tool is Figma."
+        />
         <FeatureCard
           img={weightCodeIcon}
           title="Develop"
@@ -67,7 +63,7 @@ export default function Home() {
 
       <CompanyLogo />
 
-      <section className="mt-8 lg:mt-20 px-6 lg:px-32 grid grid-cols-1 md:grid-cols-2 w-full justify-center items-center">
+      <section className="mt-8 lg:mt-20 grid grid-cols-1 md:grid-cols-2 w-full justify-center items-center">
         <div>
           <div className="absolute -z-10">
             <div className="blur-particle w-[500px] h-[500px] bg-yellow translate-x-[-70px] translate-y-[100px]"></div>
@@ -91,7 +87,7 @@ export default function Home() {
         </hgroup>
       </section>
 
-      <section className="mt-16 lg:mt-20 px-6 lg:px-32 grid grid-cols-1 md:grid-cols-2 w-full justify-center items-center">
+      <section className="mt-16 lg:mt-20 grid grid-cols-1 md:grid-cols-2 w-full justify-center items-center">
         <hgroup className="text-white text-center md:text-start order-2 md:order-1">
           <h2 className="text-green text-[12px] md:text-[14px] mb-2 uppercase">
             OUR TEAM
@@ -104,16 +100,53 @@ export default function Home() {
             maintaining quality work as well as speed. These creative people
             work together to create maximum work results.
           </p>
-          <ButtonSecondary type="muted" size="small">
+          <ButtonSecondary type="muted" size="small" w_full={true}>
             See Our Teams
           </ButtonSecondary>
         </hgroup>
         <div className="order-1 md:order-2">
+          <div className="absolute -z-10">
+            <div className="blur-particle bg-red w-[450px] h-[450px] translate-x-[-50px] translate-y-[100px]"></div>
+            <div className="blur-particle bg-primary w-[300px] h-[300px] translate-y-[-500px] translate-x-[300px]"></div>
+          </div>
           <Image src={img_ourteam} alt="illustration" />
+        </div>
+      </section>
+
+      <section className="w-full mt-16 lg:mt-20">
+        <HeroCenterContent
+          label="PROJECTS"
+          title="We have completed many amazing projects that you will not believe"
+          size="small"
+          desc=""
+        />
+        <div className="w-full flex flex-col lg:flex-row mt-5 gap-10 lg:gap-0">
+          <div className="w-full">
+            <Image src={img_mobiledisplay} alt="mobile" />
+            <hgroup className="text-center text-white">
+              <h1 className="font-bold">The Mobile App Landing Page</h1>
+              <p className="text-muted mb-5">A landing page for mobile app</p>
+              <ButtonSecondary type="outline" size="small" rounded={true}>
+                Detail
+              </ButtonSecondary>
+            </hgroup>
+          </div>
+          <div className="w-full">
+            <Image src={img_desktopdisplay} alt="dektop" className="w-full" />
+            <hgroup className="text-center text-white mt-0">
+              <h1 className="font-bold">The Desktop App Landing Page</h1>
+              <p className="text-muted mb-5">A landing page for desktop app</p>
+              <ButtonSecondary type="outline" size="small" rounded={true}>
+                Detail
+              </ButtonSecondary>
+            </hgroup>
+          </div>
         </div>
       </section>
 
       <Footer />
     </>
   );
-}
+};
+
+export default Home;

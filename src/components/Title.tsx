@@ -24,7 +24,7 @@ const Title = (props: any) => {
 };
 
 Title.defaultProps = {
-  set: "Collosal - Tell us about your problem and how we can help",
+  set: "Your Title",
 };
 
 export default Title;

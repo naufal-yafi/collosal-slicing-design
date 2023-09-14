@@ -18,14 +18,37 @@ Frontend Dev: [Muhammad Naufal Yafi'](https://github.com/naufal-yafi)
     - [Deploy on Vercel](#deploy-on-vercel)
   - [Components](#components)
     - [Title](#title)
+      - [Preview](#preview)
+      - [Property](#property)
+      - [How to use](#how-to-use)
+      - [Custom](#custom)
     - [Header](#header)
+      - [Preview](#preview-1)
+      - [Property](#property-1)
+      - [How to use](#how-to-use-1)
+      - [Custom (Active Button Navigation)](#custom-active-button-navigation)
     - [Footer](#footer)
+      - [Preview](#preview-2)
+      - [How to use](#how-to-use-2)
     - [Background Blur](#background-blur)
+      - [Preview](#preview-3)
+      - [How to Use](#how-to-use-3)
     - [Button](#button)
+      - [Preview](#preview-4)
+      - [Variations](#variations)
+      - [Property](#property-2)
       - [Button Primary](#button-primary)
+        - [How to use](#how-to-use-4)
       - [Button Secondary](#button-secondary)
+        - [How to use](#how-to-use-5)
     - [Company Logo](#company-logo)
+      - [Preview](#preview-5)
+      - [How to Use](#how-to-use-6)
     - [Feature Card](#feature-card)
+      - [Preview](#preview-6)
+      - [Property](#property-3)
+      - [How to Use](#how-to-use-7)
+      - [Custom (3-column lined layout)](#custom-3-column-lined-layout)
   - [API Specification](#api-specification)
     - [Get All Data Blog](#get-all-data-blog)
     - [Get Spesific Blog Using Slug](#get-spesific-blog-using-slug)
@@ -77,39 +100,55 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ### Title
 
-Preview:
+#### Preview
 
-![preview-title](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/bf764e47-3256-489a-aa49-6f1dc6a048c5)
+![preview-title-default](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/37631906-02bc-4dc5-80d5-141679cdd532)
 
-Property:
+You can change icon tab on
+- ./public/favicon.ico
+- ./public/icon.svg
+- ./public/apple-icon.png
+
+#### Property
 
 ```ts
 default: {
-  set: "Collosal - Tell us about your problem and how we can help"
+  set: "Your Title"
 }
 ```
 
-How to use:
+#### How to use
 
 ```ts
 import Title from "@component/Title";
 
-// Use Default Option
-<Title />
+<Title set="Collosal - Tell us about your problem and how we can help"/>
+```
 
-// Custom Title
+#### Custom
+
+```ts
+import Title from "@component/Title";
+
 <Title set="My Custom Title" />
 ```
- 
+![preview-title-custom](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/bf764e47-3256-489a-aa49-6f1dc6a048c5)
+
 [👆 [Table of Content](#table-of-content)]
 
 ### Header
 
-Preview:
+#### Preview
 
-![preview-header](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/a6515f36-6a8f-49aa-9ce6-85d9177b94d8)
+Still on top
 
-Property:
+![preview-header-ontop](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/73c6e05a-0c5a-43c5-b5be-998522683cd2)
+
+After scroll: add effect blur
+
+![preview-header-default-afterscroll](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/a48b2800-22fa-430b-8037-27076f2cb43e)
+
+#### Property
 
 ```ts
 default: {
@@ -125,27 +164,33 @@ available_params: [
 ]
 ```
 
-How to use:
+#### How to use
 
 ```ts
 import Header from "@component/Header";
 
-// Use Default Option
 <Header />
+```
 
-// Change Active Nav Button
+#### Custom (Active Button Navigation)
+
+```ts
+import Header from "@component/Header";
+
 <Header params="/work" />
 ```
+
+![preview-header-custom](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/2dea18df-069d-42e3-8c83-0939936bf9d5)
 
 [👆 [Table of Content](#table-of-content)]
 
 ### Footer
 
-Preview:
+#### Preview
 
 ![preview-header](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/58ee120d-7a29-40a9-976b-7038701aa698)
 
-How to use:
+#### How to use
 
 ```ts
 import Footer from "@component/Footer";
@@ -155,11 +200,13 @@ import Footer from "@component/Footer";
 
 ### Background Blur
 
-Preview:
+This background have smooth animation.
 
-![preview-background-blur](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/5884fe28-b9f5-4d2c-9fb6-24e792ecf317)
+#### Preview
 
-How to Use:
+![preview-blur-bg](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/9eeed9b3-9531-4f3e-abfe-5db6fc3b1b76)
+
+#### How to Use
 
 ```ts
 import BackgroundBlur from "@component/BackgroundBlur";
@@ -181,11 +228,15 @@ import BackgroundBlur from "@component/BackgroundBlur";
 
 ### Button
 
-Preview:
+#### Preview
+Primary : ![btn-primary](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/9469e88f-17e9-4b1d-9b3f-a14d3aa08a22)
 
-![preview-button](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/7111daed-84e2-4fbd-a51d-4411abcb878d)
+Secondary: ![btn-secondary](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/e3fd8eaa-f2b0-4c81-846c-ae59f86d9d64)
+#### Variations
 
-Property:
+
+
+#### Property
 
 ```ts
 default: {
@@ -207,57 +258,38 @@ available_property: {
 
 #### Button Primary
 
-How to use:
+##### How to use
 
 ```ts
 import ButtonPrimary from "@button/ButtonPrimary";
 
-// Use Default Option
 <ButtonPrimary>Button</ButtonPrimary>
-
-// Custom Button Style
-<ButtonPrimary 
-  link="/location" 
-  size="small" 
-  type="muted"
-  w_full={true}
->
-  This My Home
-</ButtonPrimary>
 ```
+![btn-primary](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/9469e88f-17e9-4b1d-9b3f-a14d3aa08a22)
 
 [👆 [Table of Content](#table-of-content)]
 
 #### Button Secondary
 
-How to use:
+##### How to use
 
 ```ts
 import ButtonSecondary from "@button/ButtonSecondary";
 
-// Use Default Option
 <ButtonSecondary>Button</ButtonSecondary>
-
-// Custom Button Style
-<ButtonSecondary 
-  link="/contact" 
-  size="large" 
-  type="outline"
-  rounded={true}
->
-  Contact Me
-</ButtonSecondary>
 ```
+
+![btn-secondary](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/e3fd8eaa-f2b0-4c81-846c-ae59f86d9d64)
 
 [👆 [Table of Content](#table-of-content)]
 
 ### Company Logo
 
-Preview:
+#### Preview
 
-![preview-company-logo](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/6463f753-62f6-4281-95a2-e23fa43a724a)
+![image](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/3f91c32a-96e2-4610-b3c2-3ded26f4b0dd)
 
-How to Use:
+#### How to Use
 
 ```ts
 import CompanyLogo from "@component/CompanyLogo";
@@ -270,46 +302,68 @@ import CompanyLogo from "@component/CompanyLogo";
 
 ### Feature Card
 
-Preview:
+#### Preview
 
-![preview-feature-card](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/67c3b37e-0dac-4fe9-9a20-5dd501405f10)
+![feature-card](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/e33174ad-b336-4da7-a682-a0216b168446)
 
-Property:
+#### Property
 
 ```ts
 default: {
-  img: "/assets/icons/weight-figma.svg",
+  img: "/",
   title: "Design",
   desc: "The project interface will be designed first, our favorite tool is Figma.",
 }
 ```
 
-How to Use:
+#### How to Use
 
 ```ts
 import FeatureCard from "@component/FeatureCard";
 
 // Import your icon/logo asset
-import weightBoxIcon from "@logo/weight-box.svg";
-import weightCodeIcon from "@logo/weight-code.svg";
+import weightFigmaIcon from "@logo/weight-figma.svg";
 
-<section className="grid grid-cols-1 md:grid-cols-3 gap-5">
-  <!-- Use Default Option -->
-  <FeatureCard />
-
-  <!-- Example Custom Option -->
+// Determine the size
+<div className="mt-12 px-32">
   <FeatureCard
-    img={weightCodeIcon}
-    title="Develop"
-    desc="Transform design and write business logic here. Choose the technology you want."
+    img={weightFigmaIcon}
+    title="Lorem Ipsum"
+    desc="Lorem ipsum dolor sit amet conseptetur."
   />
-  <FeatureCard
-    img={weightBoxIcon}
-    title="Ship"
-    desc="After the work is complete, we will send the project and all its assets to you."
-  />
-</section>
+</div>
 ```
+![result-feature-card](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/e5e1168f-b95e-4d80-8dd4-9a35084cc2a6)
+
+#### Custom (3-column lined layout)
+
+```ts
+import FeatureCard from "@component/FeatureCard";
+
+// Import your icon/logo asset
+import weightFigmaIcon from "@logo/weight-figma.svg";
+
+// Determine the size
+<div className="mt-12 px-32 grid grid-cols-1 lg:grid-cols-3 gap-5">
+  <FeatureCard
+    img={weightFigmaIcon}
+    title="Lorem Ipsum"
+    desc="Lorem ipsum dolor sit amet conseptetur."
+  />
+  <FeatureCard
+    img={weightFigmaIcon}
+    title="Lorem Ipsum"
+    desc="Lorem ipsum dolor sit amet conseptetur."
+  />
+  <FeatureCard
+    img={weightFigmaIcon}
+    title="Lorem Ipsum"
+    desc="Lorem ipsum dolor sit amet conseptetur."
+  />
+</div>
+```
+
+![image](https://github.com/naufal-yafi/collosal-slicing-design/assets/87789251/8aaa223e-136e-48c7-ba97-fbcf751fc941)
 
 [👆 [Table of Content](#table-of-content)]
 

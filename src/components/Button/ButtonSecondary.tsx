@@ -16,7 +16,7 @@ const ButtonSecondary = (props: any) => {
       ? "text-[12px] px-[45px] h-[42px] font-semibold"
       : "text-[12px] px-[30px] py-[10px] font-medium";
   const ROUNDED = props.rounded ? "rounded-full" : "rounded-[3px]";
-  const WIDTH = props.w_full ? "px-0 w-full md:px-[45px]" : "";
+  const WIDTH = props.w_full ? "px-0 w-full md:w-auto md:px-[45px]" : "";
 
   return (
     <>
