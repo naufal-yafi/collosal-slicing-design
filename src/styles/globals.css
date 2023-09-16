@@ -29,8 +29,9 @@
   .page {
     @apply px-6 z-0 md:px-32;
   }
+
   section {
-    @apply page;
+    @apply page mt-16 lg:mt-20;
   }
 
   main {

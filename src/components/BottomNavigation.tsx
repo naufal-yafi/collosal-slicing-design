@@ -22,7 +22,7 @@ const NAVIGATION = (props: any) => {
 
 const BottomNavigation = () => {
   return (
-    <div className="w-full mt-12 text-white flex flex-col md:flex-row gap-10 md:gap-16 lg:gap-28">
+    <div className="w-full mt-12 text-white flex flex-col md:flex-row gap-10 md:gap-16 lg:gap-36">
       <div>
         <div className="flex justify-center md:justify-start font-semibold text-md gap-4">
           <Image

@@ -7,7 +7,11 @@ const HeroCenterContent = (props: any) => {
     <>
       <div className="flex flex-col justify-center items-center w-full">
         <hgroup className="text-center text-white w-2/3">
-          <h2 className="text-green text-[13px] md:text-[15px] mb-4 uppercase">
+          <h2
+            className={`${
+              props.red_label ? "text-red font-medium" : "text-green"
+            } text-[13px] md:text-[15px] mb-4 uppercase`}
+          >
             {props.label}
           </h2>
           <h1 className={`${SIZE} font-bold tracking-wide`}>{props.title}</h1>
@@ -26,6 +30,7 @@ HeroCenterContent.defaultProps = {
   label: "Your Label",
   desc: "Your descriptions",
   size: "large",
+  red_label: false,
   children: "",
 };
 
