@@ -9,12 +9,16 @@ import HeroCenterContent from "@component/Section/HeroCenterContent";
 import SectionBadge from "@component/Section/SectionBadge";
 import SectionImage from "@component/Section/SectionImage";
 import SectionLine from "@component/Section/SectionLine";
+import TestimonyCard from "@component/TestimonyCard";
 import NotoSans from "@data/NotoSans";
 import img_howwework from "@image/how-we-work.svg";
 import img_ourteam from "@image/our-team.svg";
 import weightBoxIcon from "@logo/weight-box.svg";
 import weightCodeIcon from "@logo/weight-code.svg";
 import weightFigmaIcon from "@logo/weight-figma.svg";
+import avatar1 from "@photo/avatar-01.png";
+import avatar2 from "@photo/avatar-02.png";
+import avatar3 from "@photo/avatar-03.png";
 import Image from "next/image";
 
 const Home = () => {
@@ -102,7 +106,7 @@ const Home = () => {
 
         <section className="w-full mt-16 lg:mt-20">
           <div className="w-full flex justify-center items-center">
-            <div className="w-full md:w-2/3">
+            <div className="w-full lg:w-2/3">
               <HeroCenterContent
                 label="projects"
                 title="We have completed many amazing projects that you will not believe"
@@ -118,13 +122,17 @@ const Home = () => {
         </section>
 
         <section className="md:px-10">
-          <div className="bg-hightlight rounded-[30px] py-10">
-            <HeroCenterContent
-              size="small"
-              label="get started"
-              title="What do you need? Choose a service that can help you"
-              desc=""
-            ></HeroCenterContent>
+          <div className="bg-hightlight rounded-[30px] py-10 w-full">
+            <div className="w-full flex items-center justify-center">
+              <div className="w-full lg:w-2/3">
+                <HeroCenterContent
+                  size="small"
+                  label="get started"
+                  title="What do you need? Choose a service that can help you"
+                  desc=""
+                ></HeroCenterContent>
+              </div>
+            </div>
             <div className="px-4 md:px-20 lg:px-24 w-full grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10">
               <PriceCard
                 bg="bg-[#3F2379]"
@@ -148,13 +156,40 @@ const Home = () => {
           </div>
         </section>
 
-        <section>
-          <HeroCenterContent
-            size="small"
-            title="What do our clients say that we never let down?"
-            desc=""
-            label="testimonial"
-          />
+        <section className="md:px-10 flex flex-col items-center">
+          <div className="w-full lg:w-2/3">
+            <HeroCenterContent
+              size="small"
+              title="What do our clients say that we never let down?"
+              desc=""
+              label="testimonial"
+            />
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10 lg:mt-20">
+            <TestimonyCard
+              img={avatar1}
+              name="Courtney Henry"
+              job="Biffco Enterprises Ltd."
+              comment="Very easy to use. I made back the purchase price in just 48 hours! It's great. It's is both attractive and highly adaptable."
+            />
+            <TestimonyCard
+              img={avatar2}
+              flyup={true}
+              name="Esther Howard"
+              job="Abstergo Ltd."
+              comment="Your company is truly upstanding and is behind its product 100%. It's the perfect solution for our business. It has really helped our business."
+            />
+            <TestimonyCard
+              img={avatar3}
+              name="Ronald Richards"
+              job="Barone LLC."
+              comment="I am really satisfied with it. I'm good to go. It really saves me time and effort. It's is exactly what our business has been lacking."
+            />
+          </div>
+          <div className="absolute -z-20">
+            <div className="blur-particle bg-green w-[400px] h-[400px] translate-x-[330px] translate-y-[260px]"></div>
+            <div className="blur-particle bg-primary w-[300px] h-[300px] translate-x-[-300px] translate-y-[-200px]"></div>
+          </div>
         </section>
       </Layout>
     </>

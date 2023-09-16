@@ -19,6 +19,7 @@
       "@component/*": ["./src/components/*"],
       "@logo/*": ["./public/assets/icons/*"],
       "@image/*": ["./public/assets/images/*"],
+      "@photo/*": ["./public/assets/profile-photo/*"],
 
       "@/*": ["./src/*"]
     }
