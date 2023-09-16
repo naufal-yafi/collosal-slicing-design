@@ -31,7 +31,7 @@
   }
 
   section {
-    @apply page mt-16 lg:mt-20;
+    @apply page pt-16 lg:pt-20;
   }
 
   main {

@@ -107,7 +107,7 @@ const Header = (props: any) => {
       <section
         className={`block ${
           activeNavbar ? "translate-x-[0px]" : "translate-x-[-100%]"
-        } transition duration-700 md:hidden fixed top-0 left-0 z-50 h-screen w-full bg-dark bg-opacity-80 backdrop-blur-sm`}
+        } transition duration-700 md:hidden fixed top-0 left-0 z-50 h-screen w-full bg-dark bg-opacity-80 backdrop-blur-sm pt-0`}
       >
         <div className={`w-full flex justify-end ${positionNavbar}`}>
           <button
