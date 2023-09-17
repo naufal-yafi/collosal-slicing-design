@@ -1,4 +1,4 @@
-import ButtonSecondary from "@button/ButtonSecondary";
+import ButtonSecondary from "@component/Buttons/ButtonSecondary";
 
 const PriceCard = (props: any) => {
   const getService = props.services;

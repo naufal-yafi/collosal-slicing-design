@@ -1,30 +1,30 @@
-import iconMenu from "@logo/align-justify.svg";
-import iconUp from "@logo/arrow-up.svg";
-import collosalLogo from "@logo/collosal-logo.svg";
-import iconClose from "@logo/x.svg";
+import ButtonSecondary from "@button/ButtonSecondary";
+import iconMenu from "@icon/align-justify.svg";
+import iconUp from "@icon/arrow-up.svg";
+import collosalLogo from "@icon/collosal-logo.svg";
+import iconClose from "@icon/x.svg";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import ButtonSecondary from "./Button/ButtonSecondary";
 
 const Header = (props: any) => {
-  const [background, setBackground] = useState("");
-  const [arrowUp, setArrowUp] = useState("hidden");
-  const [responsivePosition, setResponsivePosition] = useState("mt-0");
-  const [activeNavbar, setActiveNavbar] = useState(false);
+  const [statusNavbar, setStatusNavbar] = useState(false);
+  const [blurBackground, setBlurBackground] = useState("");
+  const [buttonRiseUp, setButtonRiseUp] = useState("hidden");
+  const [positionHeader, setPositionHeader] = useState("mt-0");
   const [positionNavbar, setPositionNavbar] = useState("mt-5");
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 0) {
-        setBackground("bg-light backdrop-blur-[2px] px-8");
-        setArrowUp("block");
-        setResponsivePosition("mt-4");
+      if (window.scrollY > 0) {
+        setBlurBackground("bg-light backdrop-blur-[2px] px-8");
+        setButtonRiseUp("block");
+        setPositionHeader("mt-4");
         setPositionNavbar("mt-9 pr-8");
       } else {
-        setBackground("");
-        setArrowUp("hidden");
-        setResponsivePosition("mt-0");
+        setBlurBackground("");
+        setButtonRiseUp("hidden");
+        setPositionHeader("mt-0");
         setPositionNavbar("mt-5");
       }
     };
@@ -36,7 +36,7 @@ const Header = (props: any) => {
   }, []);
 
   const handleNavbar = () => {
-    setActiveNavbar(activeNavbar ? false : true);
+    setStatusNavbar(!statusNavbar);
   };
 
   const ACTIVE = "pricing-title font-medium";
@@ -45,11 +45,11 @@ const Header = (props: any) => {
   return (
     <>
       <header
-        className={`fixed px-6 lg:px-32 text-white rounded-md w-full ${responsivePosition} md:mt-4`}
+        className={`fixed px-6 lg:px-32 text-white rounded-md w-full ${positionHeader} md:mt-4`}
         id="#"
       >
         <div
-          className={`h-20 rounded-md flex flex-row justify-between items-center z-20 ${background} ease-linear transition duration-500`}
+          className={`h-20 rounded-md flex flex-row justify-between items-center z-20 ease-linear transition duration-500 ${blurBackground}`}
         >
           <Link href="/">
             <div className="flex gap-3 items-center">
@@ -95,7 +95,7 @@ const Header = (props: any) => {
       </header>
 
       <div
-        className={`${arrowUp} z-30 fixed bottom-8 right-8 w-10 h-10 flex justify-center items-center rounded-full bg-light hover:bg-muted backdrop-blur-sm transition duration-300 animate-bounce hover:animate-none`}
+        className={`${buttonRiseUp} z-30 fixed bottom-8 right-8 w-10 h-10 flex justify-center items-center rounded-full bg-light hover:bg-muted backdrop-blur-sm transition duration-300 animate-bounce hover:animate-none`}
       >
         <Link href="#">
           <button className="opacity-80 pt-1">
@@ -106,7 +106,7 @@ const Header = (props: any) => {
 
       <section
         className={`block ${
-          activeNavbar ? "translate-x-[0px]" : "translate-x-[-100%]"
+          statusNavbar ? "translate-x-[0px]" : "translate-x-[-100%]"
         } transition duration-700 md:hidden fixed top-0 left-0 z-50 h-screen w-full bg-dark bg-opacity-80 backdrop-blur-sm pt-0`}
       >
         <div className={`w-full flex justify-end ${positionNavbar}`}>

@@ -1,8 +1,8 @@
-import FormMessage from "@component/Form/FormMessage";
 import Layout from "@component/Layout";
-import SectionBadge from "@component/Section/SectionBadge";
-import SectionImage from "@component/Section/SectionImage";
-import SectionLine from "@component/Section/SectionLine";
+import FormMessage from "@form/FormMessage";
+import SectionBadge from "@section/SectionBadge";
+import SectionImage from "@section/SectionImage";
+import SectionLine from "@section/SectionLine";
 
 const Contact = () => {
   return (
@@ -16,7 +16,9 @@ const Contact = () => {
               desc=""
             ></SectionBadge>
             <SectionImage>
-              <FormMessage />
+              <div className="w-full flex justify-end">
+                <FormMessage />
+              </div>
             </SectionImage>
           </SectionLine>
         </div>

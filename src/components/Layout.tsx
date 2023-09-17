@@ -1,7 +1,7 @@
-import BackgroundBlur from "./BackgroundBlur";
-import Footer from "./Footer";
-import Header from "./Header";
-import Title from "./Title";
+import BackgroundBlur from "@accessories/BackgroundBlur";
+import Footer from "@footer";
+import Header from "@header";
+import Title from "@title";
 
 const Layout = (props: any) => {
   return (

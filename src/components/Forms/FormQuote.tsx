@@ -1,8 +1,9 @@
-import ButtonPrimary from "@button/ButtonPrimary";
+import ButtonPrimary from "@component/Buttons/ButtonPrimary";
 
-const FormMessage = () => {
+const FormQuote = () => {
   const INPUTSTYLE =
     "bg-transparent border-[1px] border-light rounded-[3px] mt-2 py-1 pl-2 outline-none focus:border-none focus:outline-1 focus:outline-primary";
+
   return (
     <>
       <form
@@ -19,12 +20,18 @@ const FormMessage = () => {
             <input type="text" className={INPUTSTYLE} />
           </div>
         </div>
-        <div className="flex flex-col w-full">
-          <label htmlFor="">Subject</label>
-          <input type="text" className={`${INPUTSTYLE} w-full`} />
+        <div className="flex gap-5">
+          <div className="flex flex-col w-48">
+            <label htmlFor="">Company</label>
+            <input type="text" className={INPUTSTYLE} />
+          </div>
+          <div className="flex flex-col w-48">
+            <label htmlFor="">Company Size</label>
+            <select className={INPUTSTYLE}></select>
+          </div>
         </div>
         <div className="flex flex-col w-full">
-          <label htmlFor="">Message</label>
+          <label htmlFor="">Tell Us Your Problem</label>
           <textarea
             name=""
             id=""
@@ -33,7 +40,7 @@ const FormMessage = () => {
         </div>
         <div className="w-full">
           <ButtonPrimary link="" long={true}>
-            Send Message
+            Send Quote
           </ButtonPrimary>
         </div>
       </form>
@@ -41,4 +48,4 @@ const FormMessage = () => {
   );
 };
 
-export default FormMessage;
+export default FormQuote;

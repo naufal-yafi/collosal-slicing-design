@@ -1,5 +1,5 @@
 import Layout from "@component/Layout";
-import HeroCenterContent from "@component/Section/HeroCenterContent";
+import HeroCenterContent from "@section/HeroCenterContent";
 
 const TermOfService = () => {
   return (

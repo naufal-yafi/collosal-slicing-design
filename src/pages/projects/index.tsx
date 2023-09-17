@@ -1,9 +1,9 @@
-import ButtonSecondary from "@button/ButtonSecondary";
+import ButtonSecondary from "@component/Buttons/ButtonSecondary";
 import Layout from "@component/Layout";
 import ProjectDisplay from "@component/ProjectDisplay";
-import SectionBadge from "@component/Section/SectionBadge";
-import SectionImage from "@component/Section/SectionImage";
-import SectionLine from "@component/Section/SectionLine";
+import SectionBadge from "@component/Sections/SectionBadge";
+import SectionImage from "@component/Sections/SectionImage";
+import SectionLine from "@component/Sections/SectionLine";
 
 const Projects = () => {
   return (
@@ -17,13 +17,18 @@ const Projects = () => {
             desc=""
           />
           <SectionImage>
-            <select
-              name=""
-              id=""
-              className="px-5 py-2 bg-transparent text-muted border-[1px] border-light rounded-[3px]"
-            >
-              <option>Technology</option>
-            </select>
+            <div className="w-full flex justify-end">
+              <select
+                name=""
+                id=""
+                className="px-5 py-2 bg-transparent text-muted border-[1px] border-light rounded-[3px]"
+              >
+                <option className="bg-hightlight">Technology</option>
+                <option className="bg-hightlight">HTML, CSS, Javascript</option>
+                <option className="bg-hightlight">Flutter</option>
+                <option className="bg-hightlight">Kotlin</option>
+              </select>
+            </div>
           </SectionImage>
         </SectionLine>
 

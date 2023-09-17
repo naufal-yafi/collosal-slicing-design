@@ -1,9 +1,9 @@
 import ButtonSecondary from "@button/ButtonSecondary";
-import FormQuote from "@component/Form/FormQuote";
 import Layout from "@component/Layout";
-import SectionBadge from "@component/Section/SectionBadge";
-import SectionImage from "@component/Section/SectionImage";
-import SectionLine from "@component/Section/SectionLine";
+import FormQuote from "@form/FormQuote";
+import SectionBadge from "@section/SectionBadge";
+import SectionImage from "@section/SectionImage";
+import SectionLine from "@section/SectionLine";
 
 const Quote = () => {
   return (
@@ -23,7 +23,9 @@ const Quote = () => {
               </div>
             </SectionBadge>
             <SectionImage>
-              <FormQuote />
+              <div className="w-full flex justify-end">
+                <FormQuote />
+              </div>
             </SectionImage>
           </SectionLine>
         </div>

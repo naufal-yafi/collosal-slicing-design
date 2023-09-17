@@ -1,5 +1,5 @@
 const HeroCenterContent = (props: any) => {
-  const SIZE =
+  const TEXT_SIZE =
     props.size === "small"
       ? "text-[27px] md:text-[30px]"
       : "text-[32px] md:text-[35px]";
@@ -14,7 +14,9 @@ const HeroCenterContent = (props: any) => {
           >
             {props.label}
           </h2>
-          <h1 className={`${SIZE} font-bold tracking-wide`}>{props.title}</h1>
+          <h1 className={`${TEXT_SIZE} font-bold tracking-wide`}>
+            {props.title}
+          </h1>
           <p className="text-[14px] text-muted leading-loose mt-5">
             {props.desc}
           </p>

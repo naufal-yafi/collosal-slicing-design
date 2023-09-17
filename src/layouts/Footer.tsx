@@ -1,10 +1,9 @@
-/* eslint-disable react/jsx-key */
-import particleGreen from "@logo/particle-green.svg";
-import particleRed from "@logo/particle-red.svg";
+import ButtonPrimary from "@button/ButtonPrimary";
+import ButtonSecondary from "@button/ButtonSecondary";
+import BottomNavigation from "@component/BottomNavigation";
+import particleGreen from "@icon/particle-green.svg";
+import particleRed from "@icon/particle-red.svg";
 import Image from "next/image";
-import BottomNavigation from "./BottomNavigation";
-import ButtonPrimary from "./Button/ButtonPrimary";
-import ButtonSecondary from "./Button/ButtonSecondary";
 
 const CTA = () => {
   return (

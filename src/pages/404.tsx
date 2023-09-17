@@ -1,6 +1,6 @@
 import ButtonSecondary from "@button/ButtonSecondary";
 import Layout from "@component/Layout";
-import HeroCenterContent from "@component/Section/HeroCenterContent";
+import HeroCenterContent from "@section/HeroCenterContent";
 
 const handler404 = () => {
   return (
