@@ -2,7 +2,6 @@ import ButtonSecondary from "@component/Buttons/ButtonSecondary";
 import img_desktop from "@image/desktop-display.svg";
 import img_mobile from "@image/mobile-display.svg";
 import Image from "next/image";
-import Link from "next/link";
 
 const ProjectDisplay = (props: any) => {
   const isDesktop = props.display === "desktop";
@@ -17,18 +16,16 @@ const ProjectDisplay = (props: any) => {
 
   return (
     <>
-      <Link href={LINK}>
-        <div className="w-full flex flex-col gap-0">
-          <Image src={IMAGE} alt="display project" className="w-full m-0 p-0" />
-          <hgroup className="text-white m-0 text-center p-0">
-            <h1 className="font-bold">{TITLE}</h1>
-            <p className="text-muted mb-5">{DESC}</p>
-            <ButtonSecondary link={LINK} size="small" type="outline">
-              Detail
-            </ButtonSecondary>
-          </hgroup>
-        </div>
-      </Link>
+      <div className="w-full flex flex-col gap-0">
+        <Image src={IMAGE} alt="display project" className="w-full m-0 p-0" />
+        <hgroup className="text-white m-0 text-center p-0">
+          <h1 className="font-bold">{TITLE}</h1>
+          <p className="text-muted mb-5">{DESC}</p>
+          <ButtonSecondary link={LINK} size="small" type="outline">
+            Detail
+          </ButtonSecondary>
+        </hgroup>
+      </div>
     </>
   );
 };

@@ -5,7 +5,7 @@ import HeroCenterContent from "@section/HeroCenterContent";
 const handler404 = () => {
   return (
     <>
-      <Layout title="Page Not Found - 404 Not Found">
+      <Layout title="Page Not Found - 404 Not Found | Collosal">
         <main>
           <HeroCenterContent
             label="ERROR"
