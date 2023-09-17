@@ -17,12 +17,13 @@ const ButtonPrimary = (props: any) => {
       : "text-[12px] px-[30px] py-[10px] font-medium";
   const ROUNDED = props.rounded ? "rounded-full" : "rounded-[3px]";
   const WIDTH = props.w_full ? "px-0 w-full md:px-[45px]" : "";
+  const LONG = props.long ? "px-0 w-full " : "";
 
   return (
     <>
       <Link href={props.link}>
         <button
-          className={`${COLORS} ${SIZE} ${ROUNDED} hover:opacity-80 ${WIDTH}`}
+          className={`${COLORS} ${SIZE} ${ROUNDED} hover:opacity-80 ${LONG}${WIDTH}`}
           style={{ whiteSpace: "nowrap" }}
         >
           {props.children}
@@ -37,6 +38,7 @@ ButtonPrimary.defaultProps = {
   size: "large",
   w_full: false,
   type: "default",
+  long: false,
   rounded: false,
   children: "Button",
 };

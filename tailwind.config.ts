@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     colors: {
+      transparent: "transparent",
       cardDark: "#161629",
       primary: "#6016FC",
       green: "#16FCD2",

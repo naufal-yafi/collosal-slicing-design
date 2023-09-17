@@ -64,7 +64,9 @@ const Home = () => {
           not reduce the quality of our work."
           >
             <div className="flex flex-col md:flex-row w-full md:w-auto gap-5 mt-8">
-              <ButtonPrimary w_full={true}>Send Quote</ButtonPrimary>
+              <ButtonPrimary w_full={true} link="/quote">
+                Send Quote
+              </ButtonPrimary>
               <ButtonSecondary type="muted" w_full={true}>
                 Learn More
               </ButtonSecondary>
@@ -198,7 +200,7 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mt-10 lg:mt-20 w-full">
             <TestimonyBundle />
           </div>
-          <div className="flex gap-2 justify-center w-full mt-12">
+          <div className="flex gap-2 justify-center w-full mt-12 -z-10">
             <div className="h-3 w-3 rounded-full bg-white"></div>
             <div className="h-3 w-3 rounded-full bg-muted opacity-50"></div>
             <div className="h-3 w-3 rounded-full bg-muted opacity-50"></div>

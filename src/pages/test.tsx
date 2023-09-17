@@ -1,11 +1,10 @@
-import ProjectDisplay from "@component/ProjectDisplay";
+import FormQuote from "@component/Form/FormQuote";
 
 const Test = () => {
   return (
     <>
-      <main className="flex">
-        <ProjectDisplay />
-        <ProjectDisplay />
+      <main>
+        <FormQuote />
       </main>
     </>
   );

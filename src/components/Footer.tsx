@@ -17,8 +17,10 @@ const CTA = () => {
         problem
       </h1>
       <div className="flex flex-col lg:flex-row gap-4 w-full lg:w-auto">
-        <ButtonPrimary w_full={true}>Send Quote</ButtonPrimary>
-        <ButtonSecondary type="muted" w_full={true}>
+        <ButtonPrimary w_full={true} link="/quote">
+          Send Quote
+        </ButtonPrimary>
+        <ButtonSecondary type="muted" w_full={true} link="/contact">
           Ask Us
         </ButtonSecondary>
       </div>

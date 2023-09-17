@@ -1,4 +1,4 @@
-import Link from "next/link";
+import ButtonSecondary from "@button/ButtonSecondary";
 
 const PriceCard = (props: any) => {
   const getService = props.services;
@@ -23,12 +23,11 @@ const PriceCard = (props: any) => {
             {serviceListItems}
           </ul>
         </div>
-
-        <Link href="/service">
-          <button className="bg-white text-dark w-full rounded-[3px] text-sm py-3 mt-14">
+        <div className="mt-14">
+          <ButtonSecondary long={true} link="/service">
             Detail
-          </button>
-        </Link>
+          </ButtonSecondary>
+        </div>
       </div>
     </>
   );

@@ -3,23 +3,23 @@ const NAV_DATA = {
     title: "SERVICES",
     data: [
       {
-        link: "/service",
+        link: "/service#development",
         label: "Web Development",
       },
       {
-        link: "/service",
+        link: "/service#development",
         label: "App Development",
       },
       {
-        link: "/service",
+        link: "/service#ui-design",
         label: "UI Design",
       },
       {
-        link: "/consult",
+        link: "/contact",
         label: "Consultation",
       },
       {
-        link: "/maintenance",
+        link: "/service#maintenance",
         label: "Maintenance",
       },
     ],
@@ -40,15 +40,15 @@ const NAV_DATA = {
         label: "Send Quote",
       },
       {
-        link: "/",
+        link: "/term-of-service",
         label: "Privacy Policy",
       },
       {
-        link: "/",
+        link: "/term-of-service",
         label: "Term of Service",
       },
       {
-        link: "/",
+        link: "/about",
         label: "Jobs",
       },
     ],
@@ -57,19 +57,23 @@ const NAV_DATA = {
     title: "RESOURCES",
     data: [
       {
-        link: "/support",
+        link: "/quote",
         label: "Support",
       },
       {
-        link: "/docs",
+        link: "/projects",
         label: "Documentation",
       },
       {
-        link: "/",
+        link: "/faq",
+        label: "FAQ",
+      },
+      {
+        link: "/term-of-service#license",
         label: "License",
       },
       {
-        link: "/",
+        link: "/how-we-work",
         label: "Sitemap",
       },
     ],
