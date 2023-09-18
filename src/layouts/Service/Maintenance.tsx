@@ -16,8 +16,8 @@ const Maintenance = () => {
       <SectionLine>
         <SectionImage>
           <div className="absolute -z-10">
-            <div className="blur-particle w-[500px] h-[500px] bg-yellow translate-x-[-70px] translate-y-[100px]"></div>
-            <div className="blur-particle w-[350px] h-[350px] bg-green translate-x-[300px] translate-y-[-550px]"></div>
+            <div className="blur-particle w-[500px] h-[500px] bg-green translate-x-[-70px] translate-y-[100px]"></div>
+            <div className="blur-particle w-[350px] h-[350px] bg-yellow translate-x-[300px] translate-y-[-550px]"></div>
           </div>
           <div className="mb-8 lg:mb-0">
             <Image src={illustration} alt="illustration" />

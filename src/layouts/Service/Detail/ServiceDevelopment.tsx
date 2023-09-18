@@ -20,7 +20,7 @@ const ServiceDevelopment = () => {
           title=""
           desc="Just tell us your repetitive problem or the primitive method used today, and we will create a digital solution."
         >
-          <p className="text-muted mt-8">
+          <p className="text-muted mt-8 text-sm">
             We can build you a website, a mobile app and a desktop app. All
             types of applications have a good security system, are easy to
             maintain, and are high speed.

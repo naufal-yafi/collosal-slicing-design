@@ -29,7 +29,7 @@ const ServiceDetail = () => {
 
         <FAQ />
 
-        <section className="text-white flex justify-center gap-2 mt-10">
+        <section className="text-white flex flex-col md:flex-row justify-center gap-2 mt-10">
           <p>Didn&apos;t find an answer?</p>
           <Link href="/faq">
             <p className="font-semibold text-primary">

@@ -18,8 +18,8 @@ const Features = () => {
         />
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-5 mt-10">
           <div className="absolute -z-10">
-            <div className="blur-particle bg-red w-[450px] h-[450px] translate-x-[-50px] translate-y-[100px]"></div>
-            <div className="blur-particle bg-primary w-[300px] h-[300px] translate-y-[-500px] translate-x-[300px]"></div>
+            <div className="blur-particle bg-red w-[450px] h-[450px] translate-x-[100px] translate-y-[100px]"></div>
+            <div className="blur-particle bg-primary w-[300px] h-[300px] translate-y-[-500px] translate-x-[400px]"></div>
           </div>
           <FeatureCard
             icon={iconFigma}
