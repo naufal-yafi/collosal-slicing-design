@@ -10,7 +10,10 @@ import SectionLine from "@section/SectionLine";
 const Contact = () => {
   return (
     <>
-      <Layout title="Contact | Collosal" params="/contact">
+      <Layout
+        title="Don't be sad if there's a problem call us - Contact | Collosal"
+        params="/contact"
+      >
         <div className="pt-14">
           <SectionLine>
             <SectionBadge

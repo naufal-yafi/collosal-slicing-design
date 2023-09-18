@@ -1,3 +1,4 @@
+import ButtonPrimary from "@button/ButtonPrimary";
 import ButtonSecondary from "@component/Buttons/ButtonSecondary";
 
 const PriceCard = (props: any) => {
@@ -24,9 +25,15 @@ const PriceCard = (props: any) => {
           </ul>
         </div>
         <div className="mt-14">
-          <ButtonSecondary long={true} link="/service">
-            Detail
-          </ButtonSecondary>
+          {props.btn_primary ? (
+            <ButtonPrimary long={true} link="/service">
+              Detail
+            </ButtonPrimary>
+          ) : (
+            <ButtonSecondary long={true} link="/service">
+              Detail
+            </ButtonSecondary>
+          )}
         </div>
       </div>
     </>
@@ -37,6 +44,7 @@ PriceCard.defaultProps = {
   bg: "bg-[#000000]",
   type_service: "Your Service",
   price: "00",
+  btn_primary: false,
   services: "Service 01, Service 02, Service 03",
 };
 

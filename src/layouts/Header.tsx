@@ -68,7 +68,7 @@ const Header = (props: any) => {
                 <Link href="/service">Services</Link>
               </li>
               <li className={props.params === "/work" ? ACTIVE : NON}>
-                <Link href="/work">How We Work</Link>
+                <Link href="/how-we-work">How We Work</Link>
               </li>
               <li className={props.params === "/project" ? ACTIVE : NON}>
                 <Link href="/projects">Project</Link>
@@ -130,7 +130,7 @@ const Header = (props: any) => {
               </Link>
             </li>
             <li className={`w-full ${props.params === "/work" ? ACTIVE : NON}`}>
-              <Link href="/work">
+              <Link href="/how-we-work">
                 <button className="py-3 text-white hover:bg-muted hover:text-dark rounded-[3px] w-full">
                   How We Work
                 </button>

@@ -18,7 +18,10 @@ const ProjectDetail = () => {
 
   return (
     <>
-      <Layout title={`${type} Project | Collosal`} params="/project">
+      <Layout
+        title="Technology we use - Project Detail | Collosal"
+        params="/project"
+      >
         <main className="w-full flex justify-center">
           <div className="w-full lg:w-2/3">
             <HeroCenterContent

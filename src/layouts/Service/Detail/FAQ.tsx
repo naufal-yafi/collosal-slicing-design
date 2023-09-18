@@ -1,5 +1,6 @@
 import FAQ_DATA from "@data/FAQ_Data";
 import HeroCenterContent from "@section/HeroCenterContent";
+import Link from "next/link";
 
 const FAQ = () => {
   return (
@@ -20,6 +21,16 @@ const FAQ = () => {
             </hgroup>
           ))}
         </div>
+      </section>
+
+      <section className="text-white flex flex-col md:flex-row justify-center gap-2 mt-10">
+        <p>Didn&apos;t find an answer?</p>
+        <Link href="/faq">
+          <p className="font-semibold text-primary">
+            Do not hesitate to ask!{" "}
+            <div className="w-full h-[2px] bg-primary"></div>
+          </p>
+        </Link>
       </section>
     </>
   );

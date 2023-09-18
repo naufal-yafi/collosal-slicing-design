@@ -8,29 +8,35 @@ import SectionLine from "@component/Sections/SectionLine";
 const Projects = () => {
   return (
     <>
-      <Layout title="Projects | Collosal" params="/project">
-        <main></main>
-        <SectionLine>
-          <SectionBadge
-            label="projects"
-            title="We have completed many amazing projects that you will not believe"
-            desc=""
-          />
-          <SectionImage>
-            <div className="w-full flex justify-end">
-              <select
-                name=""
-                id=""
-                className="px-5 py-2 bg-transparent text-muted border-[1px] border-light rounded-[3px]"
-              >
-                <option className="bg-hightlight">Technology</option>
-                <option className="bg-hightlight">HTML, CSS, Javascript</option>
-                <option className="bg-hightlight">Flutter</option>
-                <option className="bg-hightlight">Kotlin</option>
-              </select>
-            </div>
-          </SectionImage>
-        </SectionLine>
+      <Layout
+        title="View the results of projects we've completed - Projects | Collosal"
+        params="/project"
+      >
+        <div className="pt-14">
+          <SectionLine>
+            <SectionBadge
+              label="projects"
+              title="We have completed many amazing projects that you will not believe"
+              desc=""
+            />
+            <SectionImage>
+              <div className="w-full flex justify-center lg:justify-end">
+                <select
+                  name=""
+                  id=""
+                  className="px-5 py-2 bg-transparent text-muted border-[1px] border-light rounded-[3px]"
+                >
+                  <option className="bg-hightlight">Technology</option>
+                  <option className="bg-hightlight">
+                    HTML, CSS, Javascript
+                  </option>
+                  <option className="bg-hightlight">Flutter</option>
+                  <option className="bg-hightlight">Kotlin</option>
+                </select>
+              </div>
+            </SectionImage>
+          </SectionLine>
+        </div>
 
         <section>
           <hr className="border-light" />
@@ -44,7 +50,9 @@ const Projects = () => {
             <ProjectDisplay display="mobile" />
           </div>
           <div className="w-full flex justify-center mt-24">
-            <ButtonSecondary type="muted">Load More</ButtonSecondary>
+            <ButtonSecondary link="" type="muted">
+              Load More
+            </ButtonSecondary>
           </div>
         </section>
       </Layout>

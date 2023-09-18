@@ -57,6 +57,14 @@ const NAV_DATA = {
     title: "RESOURCES",
     data: [
       {
+        link: "/blog",
+        label: "Blog",
+      },
+      {
+        link: "/pricing",
+        label: "Pricing",
+      },
+      {
         link: "/quote",
         label: "Support",
       },
@@ -71,10 +79,6 @@ const NAV_DATA = {
       {
         link: "/term-of-service#license",
         label: "License",
-      },
-      {
-        link: "/how-we-work",
-        label: "Sitemap",
       },
     ],
   },

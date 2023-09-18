@@ -1,0 +1,24 @@
+<svg width="376" height="385" viewBox="0 0 376 385" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="120" height="120" rx="10" transform="matrix(1 0 0 -1 0 385)" fill="white" fill-opacity="0.05"/>
+<rect x="0.5" y="-0.5" width="119" height="119" rx="9.5" transform="matrix(1 0 0 -1 0 384)" stroke="white" stroke-opacity="0.1"/>
+<rect width="38.534" height="38.534" rx="5" transform="matrix(1 0 0 -1 20 365)" fill="white" fill-opacity="0.05"/>
+<rect width="38.534" height="38.534" rx="5" transform="matrix(1 0 0 -1 20 322.534)" fill="white" fill-opacity="0.05"/>
+<rect width="38.534" height="38.534" rx="5" transform="matrix(1 0 0 -1 62.4658 365)" fill="white" fill-opacity="0.05"/>
+<rect width="38.534" height="38.534" rx="5" transform="matrix(1 0 0 -1 62.4658 322.534)" fill="white" fill-opacity="0.05"/>
+<rect width="275" height="173" rx="10" transform="matrix(1 0 0 -1 101 173)" fill="white" fill-opacity="0.05"/>
+<rect width="148" height="94" rx="10" transform="matrix(1 0 0 -1 205 160)" fill="white" fill-opacity="0.03"/>
+<rect width="36" height="36" rx="10" transform="matrix(1 0 0 -1 204 56)" fill="white" fill-opacity="0.03"/>
+<rect width="36" height="36" rx="10" transform="matrix(1 0 0 -1 260 56)" fill="white" fill-opacity="0.03"/>
+<rect width="36" height="36" rx="10" transform="matrix(1 0 0 -1 316 56)" fill="white" fill-opacity="0.03"/>
+<rect width="56" height="142" rx="10" transform="matrix(1 0 0 -1 124 162)" fill="white" fill-opacity="0.03"/>
+<circle cx="39" cy="39" r="39" transform="matrix(1 0 0 -1 227 339)" fill="white" fill-opacity="0.05"/>
+<circle cx="32" cy="32" r="32" transform="matrix(1 0 0 -1 234 332)" fill="white" fill-opacity="0.1"/>
+<circle cx="22" cy="22" r="22" transform="matrix(1 0 0 -1 244 322)" fill="white" fill-opacity="0.15"/>
+<path d="M266 290C271.523 290 276 294.477 276 300C276 305.523 271.523 310 266 310C260.477 310 256 305.523 256 300C256 294.477 260.477 290 266 290Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M256 300H276" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M266 310C268.501 307.262 269.923 303.708 270 300C269.923 296.292 268.501 292.738 266 290C263.499 292.738 262.077 296.292 262 300C262.077 303.708 263.499 307.262 266 310V310Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M120 329.5C117.5 329.5 115.5 327.5 115.5 325C115.5 322.5 117.5 320.5 120 320.5C122.5 320.5 124.5 322.5 124.5 325C124.5 327.5 122.5 329.5 120 329.5Z" fill="#6016FC"/>
+<path d="M124.5 325H161C167.904 325 173.5 319.404 173.5 312.5V312.5C173.5 305.596 179.096 300 186 300H227M115.5 325C115.5 327.5 117.5 329.5 120 329.5C122.5 329.5 124.5 327.5 124.5 325C124.5 322.5 122.5 320.5 120 320.5C117.5 320.5 115.5 322.5 115.5 325Z" stroke="white" stroke-opacity="0.05" stroke-width="3" stroke-linecap="square" stroke-dasharray="0"/>
+<path d="M266 265.5C263.5 265.5 261.5 263.5 261.5 261C261.5 258.5 263.5 256.5 266 256.5C268.5 256.5 270.5 258.5 270.5 261C270.5 263.5 268.5 265.5 266 265.5Z" fill="#6016FC"/>
+<path d="M266 256.5V230.75C266 223.156 259.844 217 252.25 217V217C244.656 217 238.5 210.844 238.5 203.25V173M261.5 261C261.5 263.5 263.5 265.5 266 265.5C268.5 265.5 270.5 263.5 270.5 261C270.5 258.5 268.5 256.5 266 256.5C263.5 256.5 261.5 258.5 261.5 261Z" stroke="white" stroke-opacity="0.05" stroke-width="3" stroke-dasharray="0"/>
+</svg>

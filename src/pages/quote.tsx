@@ -8,7 +8,7 @@ import SectionLine from "@section/SectionLine";
 const Quote = () => {
   return (
     <>
-      <Layout title="Send Quote | Collosal">
+      <Layout title="Let me know your problem - Send Quote | Collosal">
         <div className="pt-14">
           <SectionLine>
             <SectionBadge

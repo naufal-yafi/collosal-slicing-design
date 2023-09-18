@@ -7,7 +7,10 @@ import HeroCenterContent from "@section/HeroCenterContent";
 const Service = () => {
   return (
     <>
-      <Layout title="Service | Collosal" params="/service">
+      <Layout
+        title="We can solve your problem - Service | Collosal"
+        params="/service"
+      >
         <main className="flex justify-center">
           <div className="w-full lg:w-2/3">
             <HeroCenterContent
