@@ -8,14 +8,14 @@ import Image from "next/image";
 
 const Development = () => {
   return (
-    <>
+    <div id="development">
       <SectionLine>
         <SectionImage img_right={true}>
           <div className="absolute -z-10">
             <div className="blur-particle bg-red w-[450px] h-[450px] translate-x-[-50px] translate-y-[100px]"></div>
             <div className="blur-particle bg-primary w-[300px] h-[300px] translate-y-[-500px] translate-x-[300px]"></div>
           </div>
-          <div className="w-full flex justify-end">
+          <div className="w-full flex justify-end mb-8 lg:mb-0">
             <Image src={illustration} alt="illustration" />
           </div>
         </SectionImage>
@@ -35,7 +35,7 @@ const Development = () => {
           </div>
         </SectionBadge>
       </SectionLine>
-    </>
+    </div>
   );
 };
 

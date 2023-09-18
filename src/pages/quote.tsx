@@ -23,7 +23,7 @@ const Quote = () => {
               </div>
             </SectionBadge>
             <SectionImage>
-              <div className="w-full flex justify-end">
+              <div className="w-full flex justify-center lg:justify-end">
                 <FormQuote />
               </div>
             </SectionImage>

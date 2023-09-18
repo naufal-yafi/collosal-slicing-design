@@ -4,8 +4,8 @@ const PriceCard = (props: any) => {
   const getService = props.services;
   const serviceList = getService.split(", ");
 
-  const serviceListItems = serviceList.map((service: any) => (
-    <li key={service.index}>{service}</li>
+  const serviceListItems = serviceList.map((service: any, index: number) => (
+    <li key={index}>{service}</li>
   ));
 
   return (

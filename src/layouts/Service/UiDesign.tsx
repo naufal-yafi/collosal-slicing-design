@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const UiDesign = () => {
   return (
-    <>
+    <div id="ui-design">
       <SectionLine>
         <SectionImage>
           <div className="absolute -z-10">
@@ -41,7 +41,7 @@ const UiDesign = () => {
           </div>
         </SectionBadge>
       </SectionLine>
-    </>
+    </div>
   );
 };
 

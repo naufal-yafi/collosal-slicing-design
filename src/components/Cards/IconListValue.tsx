@@ -7,7 +7,7 @@ const CardListValue = (props: any) => {
         <div className="w-12 h-12 bg-light flex justify-center items-center rounded-[3px]">
           <Image src={props.icon} alt="icon" width={20} height={20} />
         </div>
-        <h1>{props.title}</h1>
+        <h1>{props.value}</h1>
       </figure>
     </>
   );
@@ -15,7 +15,7 @@ const CardListValue = (props: any) => {
 
 CardListValue.defaultProps = {
   icon: "/",
-  title: "Your Title",
+  value: "Your Value",
 };
 
 export default CardListValue;
