@@ -27,8 +27,10 @@
       "@layout/*": ["./src/layouts/*"],
       "@logo/*": ["./public/assets/icons/*"],
       "@icon/*": ["./public/assets/icons/*"],
+      "@thumbnail/*": ["./public/assets/blog-thumbnail/*"],
       "@image/*": ["./public/assets/images/*"],
       "@photo/*": ["./public/assets/profile-photo/*"],
+      "@model/*": ["./src/models/*"],
 
       "@/*": ["./src/*"]
     }
