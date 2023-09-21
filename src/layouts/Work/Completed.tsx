@@ -13,7 +13,9 @@ const Completed = () => {
             <div className="blur-particle w-[500px] h-[500px] bg-green translate-x-[-70px] translate-y-[100px]"></div>
             <div className="blur-particle w-[350px] h-[350px] bg-yellow translate-x-[300px] translate-y-[-550px]"></div>
           </div>
-          <Image src={illustration} alt="illustration" />
+          <div className="w-full flex justify-center">
+            <Image src={illustration} alt="illustration" />
+          </div>
         </SectionImage>
         <SectionBadge
           label="step 03"

@@ -3,7 +3,7 @@ import Image from "next/image";
 const CommentCard = (props: any) => {
   return (
     <>
-      <figure className="border-b-[1px] border-light text-white p-8 pb-12 w-full flex flex-col lg:flex-row gap-14 mt-8">
+      <figure className="border-b-[1px] border-light text-white p-8 pb-12 w-full flex flex-col lg:flex-row gap-5 lg:gap-14 mt-8">
         <div className="w-full lg:w-auto">
           <div className="w-16 h-16 rounded-full ">
             <Image src={props.photo} alt="photo" width={64} height={64} />

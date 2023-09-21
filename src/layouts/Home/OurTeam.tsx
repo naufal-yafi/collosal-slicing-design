@@ -14,7 +14,9 @@ const OurTeam = () => {
             <div className="blur-particle bg-red w-[450px] h-[450px] translate-x-[-50px] translate-y-[100px]"></div>
             <div className="blur-particle bg-primary w-[300px] h-[300px] translate-y-[-500px] translate-x-[300px]"></div>
           </div>
-          <Image src={img_ourteam} alt="illustration" />
+          <div className="w-full flex justify-center">
+            <Image src={img_ourteam} alt="illustration" />
+          </div>
         </SectionImage>
         <SectionBadge
           img_right={true}

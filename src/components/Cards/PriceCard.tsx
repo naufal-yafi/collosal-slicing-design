@@ -26,11 +26,11 @@ const PriceCard = (props: any) => {
         </div>
         <div className="mt-14">
           {props.btn_primary ? (
-            <ButtonPrimary long={true} link="/service">
+            <ButtonPrimary long={true} link={props.link}>
               Detail
             </ButtonPrimary>
           ) : (
-            <ButtonSecondary long={true} link="/service">
+            <ButtonSecondary long={true} link={props.link}>
               Detail
             </ButtonSecondary>
           )}
@@ -45,6 +45,7 @@ PriceCard.defaultProps = {
   type_service: "Your Service",
   price: "00",
   btn_primary: false,
+  link: "/",
   services: "Service 01, Service 02, Service 03",
 };
 

@@ -15,7 +15,9 @@ const About = () => {
         <div className="pt-14">
           <SectionLine>
             <SectionImage>
-              <Image src={illustration} alt="illustration" />
+              <div className="w-full flex justify-center">
+                <Image src={illustration} alt="illustration" />
+              </div>
             </SectionImage>
             <SectionBadge
               label="about"

@@ -22,18 +22,21 @@ const GetStarted = () => {
               type_service="UI Design"
               price="1200"
               services="10 design pages, Well-documented, 4 revisions, $100/additional page"
+              link="/service#ui-design"
             />
             <PriceCard
               bg="bg-[#233679]"
               type_service="Development"
               price="5000"
               services="Web & Mobile, Well-documented, 8 revisions, $1000/additional feature"
+              link="/service#development"
             />
             <PriceCard
               bg="bg-[#792366]"
               type_service="Maintenance"
               price="3000"
               services="Daily backup, 3 hours of maintenance, Including fixing, $50/additional hour"
+              link="/service#maintenance"
             />
           </div>
         </div>

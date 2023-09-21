@@ -29,8 +29,10 @@ const FormComment = () => {
           ></textarea>
         </div>
         <div className="w-full">
-          <div className="flex justify-end">
-            <ButtonPrimary link="">Post Comment</ButtonPrimary>
+          <div className="flex justify-center lg:justify-end">
+            <ButtonPrimary link="" w_full={true}>
+              Post Comment
+            </ButtonPrimary>
           </div>
         </div>
       </form>

@@ -19,7 +19,7 @@ const Maintenance = () => {
             <div className="blur-particle w-[500px] h-[500px] bg-green translate-x-[-70px] translate-y-[100px]"></div>
             <div className="blur-particle w-[350px] h-[350px] bg-yellow translate-x-[300px] translate-y-[-550px]"></div>
           </div>
-          <div className="mb-8 lg:mb-0">
+          <div className="w-full flex justify-center mb-8 lg:mb-0">
             <Image src={illustration} alt="illustration" />
           </div>
         </SectionImage>

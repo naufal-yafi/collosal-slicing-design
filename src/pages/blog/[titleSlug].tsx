@@ -60,7 +60,7 @@ const BlogDetail = () => {
 
         <ParagraphBottom />
 
-        <div className="px-6 lg:px-64 mt-8 flex gap-5 flex-wrap">
+        <div className="px-6 md:px-32 lg:px-64 mt-8 flex gap-5 flex-wrap">
           <CloudTag tag="Figma" />
           <CloudTag tag="UI Design" />
           <CloudTag tag="Curated List" />
