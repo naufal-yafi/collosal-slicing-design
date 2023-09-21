@@ -1,27 +1,44 @@
+import DetailFaq from "@component/DetailFaq";
 import FAQ_DATA from "@data/FAQ_Data";
 import { useState } from "react";
-import Dropdown from "./Dropdown";
+
 const ListFaq = () => {
-  const [faqs, setFaqs] = useState(FAQ_DATA.general);
   const [tab, setTabs] = useState("general");
   const ON = "hover:opacity-30";
   const OFF = "text-muted hover:opacity-40";
 
-  const handleData = () => {
-    if (tab === "transaction") {
-      setFaqs(FAQ_DATA.transaction);
-    } else if (tab === "maintenance") {
-      setFaqs(FAQ_DATA.maintenance);
-    } else if (tab === "technology") {
-      setFaqs(FAQ_DATA.technology);
-    } else {
-      setFaqs(FAQ_DATA.general);
-    }
+  const [content, setContent] = useState(
+    <>
+      {FAQ_DATA.maintenance.map((faq) => (
+        <DetailFaq key={faq.id} title={faq.question} desc={faq.answer} />
+      ))}
+    </>,
+  );
+
+  const changeContent = (faqs: any) => {
+    setContent(
+      <>
+        {faqs.map((faq: any) => (
+          <DetailFaq key={faq.id} title={faq.question} desc={faq.answer} />
+        ))}
+      </>,
+    );
   };
 
   const handleChangeTab = (tab: string) => {
-    setTabs(tab);
-    handleData();
+    if (tab === "transaction") {
+      changeContent(FAQ_DATA.transaction);
+      setTabs("transaction");
+    } else if (tab === "maintenance") {
+      changeContent(FAQ_DATA.maintenance);
+      setTabs("maintenance");
+    } else if (tab === "technology") {
+      changeContent(FAQ_DATA.technology);
+      setTabs("technology");
+    } else {
+      changeContent(FAQ_DATA.general);
+      setTabs("general");
+    }
   };
 
   return (
@@ -64,11 +81,7 @@ const ListFaq = () => {
             Technology
           </button>
         </div>
-        <div className="w-full flex flex-col gap-8">
-          {faqs.map((faq) => (
-            <Dropdown key={faq.id} title={faq.question} desc={faq.answer} />
-          ))}
-        </div>
+        <div className="w-full flex flex-col gap-8">{content}</div>
       </section>
     </>
   );
