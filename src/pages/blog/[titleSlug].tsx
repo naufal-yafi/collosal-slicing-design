@@ -1,6 +1,7 @@
 import AuthorCard from "@card/AuthorCard";
 import CloudTag from "@component/CloudTag";
 import Layout from "@component/Layout";
+import CONTENT_BLOG from "@data/Content_Blog";
 import FormComment from "@form/FormComment";
 import ParagraphBottom from "@layout/Blog/ParagraphBottom";
 import ParagraphTop from "@layout/Blog/ParagraphTop";
@@ -9,28 +10,34 @@ import Responses from "@layout/Blog/Responses";
 import HeroCenterContent from "@section/HeroCenterContent";
 import blogContent from "@thumbnail/content-blog.webp";
 import Image from "next/image";
+import { useRouter } from "next/router";
 
 const BlogDetail = () => {
+  const router = useRouter();
+  const { titleSlug } = router.query;
+  const blog = CONTENT_BLOG.find((data) => data.slug === titleSlug);
+
   return (
     <>
-      <Layout title={`- Blog Detail | Collosal`}>
+      <Layout title={`${blog?.title} - Blog Detail | Collosal`}>
         <main>
           <div>
             <HeroCenterContent
               label="read"
-              title={"10 Figma Plugins that will increase your productivity"}
-              desc={"Month 00 • 0 min read"}
+              title={blog?.title}
+              desc={`${blog?.date} • ${blog?.reading_time}`}
             />
           </div>
         </main>
 
         <section>
           <Image
-            src="/assets/blog-thumbnail/thumbnail-01.webp"
+            src={`/assets/blog-thumbnail/${blog?.thumbnail}.png`}
             alt="thumbnail"
             width={100}
             height={100}
             className="w-full h-auto rounded-[5px]"
+            unoptimized={true}
           />
         </section>
 
@@ -53,7 +60,11 @@ const BlogDetail = () => {
         </div>
 
         <section className="lg:px-64">
-          <AuthorCard />
+          <AuthorCard
+            photo={`/assets/profile-photo/${blog?.author.photo}.png`}
+            name={blog?.author.username}
+            job={blog?.author.job}
+          />
         </section>
 
         <Recommendation />

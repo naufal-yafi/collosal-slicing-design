@@ -13,6 +13,7 @@ const BlogCard = (props: any) => {
               width={100}
               height={100}
               className="w-full h-auto"
+              unoptimized={true}
             />
           </div>
           <hgroup className="text-white mt-5">

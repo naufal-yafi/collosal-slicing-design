@@ -2,7 +2,7 @@ import BlogCard from "@card/BlogCard";
 import photo3 from "@photo/profile-01.png";
 import photo2 from "@photo/profile-02.png";
 import photo1 from "@photo/profile-03.png";
-import thumb3 from "@thumbnail/thumbnail-01.webp";
+import thumb3 from "@thumbnail/thumbnail-01.png";
 import thumb2 from "@thumbnail/thumbnail-02.png";
 import thumb1 from "@thumbnail/thumbnail-03.png";
 

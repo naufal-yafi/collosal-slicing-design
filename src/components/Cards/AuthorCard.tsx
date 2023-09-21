@@ -8,7 +8,7 @@ const AuthorCard = (props: any) => {
   return (
     <>
       <figure className="p-8 bg-light rounded-[3px] flex flex-col lg:flex-row items-center lg:items-start gap-10">
-        <div className="w-20 h-20 rounded-full bg-light">
+        <div className="w-20 h-20 rounded-full">
           <Image src={props.photo} alt="photo" width={80} height={80} />
         </div>
         <div className="text-white w-auto">

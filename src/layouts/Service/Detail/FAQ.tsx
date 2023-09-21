@@ -3,6 +3,8 @@ import HeroCenterContent from "@section/HeroCenterContent";
 import Link from "next/link";
 
 const FAQ = () => {
+  const faqs = FAQ_DATA.maintenance;
+
   return (
     <>
       <section className="flex flex-col items-center justify-center">
@@ -14,9 +16,9 @@ const FAQ = () => {
           />
         </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 mt-10 gap-x-10 gap-y-20">
-          {FAQ_DATA.transaction.map((faq) => (
+          {faqs.map((faq) => (
             <hgroup className="text-white" key={faq.id}>
-              <h1 className="text-xl font-bold">{faq.question}</h1>
+              <h3 className="text-xl font-bold">{faq.question}</h3>
               <p className="text-muted mt-5">{faq.answer}</p>
             </hgroup>
           ))}

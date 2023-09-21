@@ -1,11 +1,16 @@
 import ButtonSecondary from "@button/ButtonSecondary";
-import BlogCard from "@card/BlogCard";
 import Layout from "@component/Layout";
-import profile from "@photo/profile-01.png";
+import ListBlog from "@layout/Blog/ListBlog";
 import HeroCenterContent from "@section/HeroCenterContent";
-import thumbnail from "@thumbnail/thumbnail-01.webp";
+import { useState } from "react";
 
 const Blog = () => {
+  const [moreContent, setMoreContent] = useState(false);
+
+  const handleLoadMore = () => {
+    setMoreContent(!moreContent);
+  };
+
   return (
     <>
       <Layout title="Read the blog we created - Blog | Collosal">
@@ -24,17 +29,19 @@ const Blog = () => {
         </section>
 
         <section className="grid grid-cols-1 lg:grid-cols-3 gap-x-5 gap-y-14 mt-10">
-          <BlogCard thumbnail={thumbnail} author_photo={profile} />
-          <BlogCard thumbnail={thumbnail} author_photo={profile} />
-          <BlogCard thumbnail={thumbnail} author_photo={profile} />
-          <BlogCard thumbnail={thumbnail} author_photo={profile} />
-          <BlogCard thumbnail={thumbnail} author_photo={profile} />
-          <BlogCard thumbnail={thumbnail} author_photo={profile} />
+          {moreContent ? (
+            <>
+              <ListBlog />
+              <ListBlog />
+            </>
+          ) : (
+            <ListBlog />
+          )}
         </section>
 
-        <div className="flex justify-center mt-20">
+        <div className="flex justify-center mt-20" onClick={handleLoadMore}>
           <ButtonSecondary link="" type="muted">
-            Load More
+            {moreContent ? "Load Less" : "Load More"}
           </ButtonSecondary>
         </div>
       </Layout>

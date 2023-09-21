@@ -1,5 +1,5 @@
 import Layout from "@component/Layout";
-import DynamicDropdown from "@layout/FAQ/DynamicDropdown";
+import ListFaq from "@layout/FAQ/ListFaq";
 import HeroCenterContent from "@section/HeroCenterContent";
 
 const FAQS = () => {
@@ -18,7 +18,7 @@ const FAQS = () => {
         <section>
           <hr className="border-light" />
         </section>
-        <DynamicDropdown />
+        <ListFaq />
       </Layout>
     </>
   );
