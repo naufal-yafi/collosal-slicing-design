@@ -11,11 +11,18 @@ import HeroCenterContent from "@section/HeroCenterContent";
 import blogContent from "@thumbnail/content-blog.webp";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 const BlogDetail = () => {
   const router = useRouter();
   const { titleSlug } = router.query;
-  const blog = CONTENT_BLOG.find((data) => data.slug === titleSlug);
+  const blog = CONTENT_BLOG.find((blog) => blog.slug === titleSlug);
+
+  useEffect(() => {
+    if (!blog) {
+      router.push("/blog");
+    }
+  }, [blog]);
 
   return (
     <>

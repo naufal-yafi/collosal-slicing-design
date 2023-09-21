@@ -22,6 +22,7 @@ const Recommendation = () => {
             author_photo={photo1}
             published="Feb 20"
             read_time="8 min read"
+            link="/blog/how-to-compress-image-size-without-losing-quality"
           />
           <BlogCard
             thumbnail={thumb2}
@@ -31,6 +32,7 @@ const Recommendation = () => {
             author_photo={photo2}
             published="Feb 19"
             read_time="12 min read"
+            link="/blog/why-is-google-still-not-recognizing-my-website"
           />
           <BlogCard
             thumbnail={thumb3}
@@ -40,6 +42,7 @@ const Recommendation = () => {
             author_photo={photo3}
             published="Feb 7"
             read_time="9 min read"
+            link="/blog/monitor-your-application-when-errors-occur-in-production"
           />
         </div>
       </section>
