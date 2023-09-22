@@ -1,3 +1,4 @@
+import Particle from "@accessories/Particle";
 import ProjectDisplay from "@component/ProjectDisplay";
 import HeroCenterContent from "@section/HeroCenterContent";
 
@@ -6,6 +7,7 @@ const Projects = () => {
     <>
       <section className="w-full mt-16 lg:mt-20">
         <div className="w-full flex justify-center items-center">
+          <Particle />
           <div className="w-full lg:w-2/3">
             <HeroCenterContent
               label="projects"

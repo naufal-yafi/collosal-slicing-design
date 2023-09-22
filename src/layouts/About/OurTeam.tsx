@@ -1,3 +1,4 @@
+import Particle from "@accessories/Particle";
 import TeamCard from "@card/TeamCard";
 import author6 from "@photo/author-01.png";
 import author5 from "@photo/author-02.png";
@@ -12,6 +13,7 @@ const OurTeam = () => {
     <>
       <section className="flex flex-col justify-center items-center mt-16">
         <div className="flex justify-center w-full lg:w-2/3">
+          <Particle />
           <HeroCenterContent
             label="our team"
             title="Meet the team! All creative people are here"

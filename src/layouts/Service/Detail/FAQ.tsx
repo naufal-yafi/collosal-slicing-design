@@ -1,3 +1,4 @@
+import Particle from "@accessories/Particle";
 import FAQ_DATA from "@data/FAQ_Data";
 import HeroCenterContent from "@section/HeroCenterContent";
 import Link from "next/link";
@@ -9,6 +10,7 @@ const FAQ = () => {
     <>
       <section className="flex flex-col items-center justify-center">
         <div className="w-full lg:w-2/3">
+          <Particle />
           <HeroCenterContent
             label="FAQ"
             desc=""
